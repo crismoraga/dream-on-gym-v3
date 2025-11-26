@@ -53,7 +53,6 @@ En v3 nos centramos en estabilidad, reusabilidad y en un conjunto de utilidades 
 
 ---
 
-<a name="que-hay-de-nuevo-v3"></a>
 ## 🔄 Qué hay de nuevo (v3)
 
 DREAM-ON-GYM-V3 es una versión de reingeniería: no es solo más funciones, es una **evolución de arquitectura** con soporte mejorado para benchmarking y reproducibilidad.
@@ -73,28 +72,26 @@ DREAM-ON-GYM-V3 es una versión de reingeniería: no es solo más funciones, es 
 
 ---
 
-<a name="arquitectura-mermaid"></a>
 ## 🏗️ Arquitectura (Visión general)
 
 ```mermaid
 flowchart LR
-        subgraph Simulation
-            Sim[Simulator (simNetPy)] -->|Events & State| Network[Network (links, slots)]
-            Network -->|spectrum state| Metrics[metrics.py]
-        end
-        subgraph RL
-            Env[Gym Env (RlOnEnv)] -->|obs| Agent[RL Agent]
-            Agent -->|actions| Env
-            Env -->|invokes| RewardFns[Reward Functions]
-        end
-        Metrics -->|features/entropy| RewardFns
-        RewardFns -->|reward| Env
-        Agent -->|training| Logger[Training & Logger]
-        Logger -->|plots/stats| Dashboard[Plotly Dashboard]
+    subgraph Simulation
+        Sim["Simulator (simNetPy)"] -->|Events and State| Network["Network (links, slots)"]
+        Network -->|Spectrum State| Metrics["metrics.py"]
+    end
+    subgraph RL
+        Env["RlOnEnv"] -->|Observations| Agent["RL Agent"]
+        Agent -->|Actions| Env
+        Env -->|Invokes| RewardFns["Reward Functions"]
+    end
+    Metrics -->|features / entropy| RewardFns
+    RewardFns -->|Reward| Env
+    Agent -->|Training| Logger["Trainer & Logger"]
+    Logger -->|Plots| Dashboard["Plotly Dashboard"]
 ```
 
 
-<a name="estructura-del-modulo"></a>
 ## 📁 Estructura del Módulo
 
 ```text
@@ -121,7 +118,6 @@ dreamongymv2/reward_functions/         # Paquete principal con lógica de reward
     └── ItalianNet_*.png
 ```
 
-<a name="uso-rapido"></a>
 ## 🚀 Uso Rápido
 
 ```python
@@ -185,7 +181,6 @@ Zonas adaptativas:
 - Crítica (H > 0.8): R = R_base - 0.25  (saturación)
 ```
 
-<a name="ejecucion-de-evaluaciones"></a>
 ## 📊 Ejecución de Evaluaciones
 
 ```bash
@@ -202,7 +197,6 @@ python -m dreamongymv2.reward_functions.full_evaluation
 python -m dreamongymv2.reward_functions.examples
 ```
 
-<a name="visualizaciones-y-reportes"></a>
 ## 📈 Visualizaciones Generadas
 
 El módulo genera automáticamente:
@@ -222,7 +216,6 @@ El módulo genera automáticamente:
 
 ---
 
-<a name="reproducibilidad"></a>
 ## 🔒 Reproducibilidad y Seeds
 
 Para ejecutar experimentos reproducibles, define seeds en el simulador **antes** de llamar `init()`:
@@ -248,7 +241,6 @@ np.random.seed(42)
 
 ---
 
-<a name="metricas-disponibles"></a>
 ## 🧮 Métricas disponibles
 
 El módulo `metrics.py` ofrece las principales métricas ya implementadas, entre otras:
@@ -261,7 +253,6 @@ Usa estas funciones para instrumentar recompensas personalizadas y dashboards.
 
 ---
 
-<a name="optimización-produccion"></a>
 ## ⚡ Optimización y producción (enterprise)
 
 - Usa `run_experiments.py` con `--parallel` (si lo habilitas) para ejecutar múltiples configuraciones en paralelo.

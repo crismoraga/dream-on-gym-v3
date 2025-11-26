@@ -1,14 +1,16 @@
 # DREAM-ON-GYM V3 — ULTRA (Optimized, Enterprise-ready)
 
- [![License](https://img.shields.io/badge/license-MIT-blue.svg)](licenses/LICENSE_GYM.md)  [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org)  [![Status](https://img.shields.io/badge/status-experimental-orange.svg)]()
+ [![License](https://img.shields.io/badge/license-MIT-blue.svg)](licenses/LICENSE_GYM.md)  [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org)  [![Status](https://img.shields.io/badge/status-experimental-orange.svg)](https://github.com/crismoraga/dream-on-gym-v3)
 
  [![Docs](https://img.shields.io/badge/Docs-View-blue)](docs/docs/index.md)  [![Examples](https://img.shields.io/badge/Examples-Run-green)](examples/gym/example1.py)  [![Run Quick Eval](https://img.shields.io/badge/QuickEval-run-orange)](dreamongymv2/reward_functions/quick_evaluation.py)  [![Status](https://img.shields.io/badge/status-GitHub-blue)](https://github.com/crismoraga/dream-on-gym-v3)
 
 <!-- Banner -->
 ![DREAM-ON-GYM-V3 Banner](assets/banner.svg)
 
-<!-- Icon aligned next to title -->
-<img alt="DREAM-ON-GYM V3 icon" src="assets/icon.svg" width="56" height="56" style="vertical-align: middle; margin-top: 1rem; margin-right: 12px;">
+*Nota: Si tu cliente no renderiza SVG, existe una versión PNG en `assets/banner.png`.*
+
+<!-- Icon: use Markdown image - PNG fallback exists in assets/icon.png -->
+![DREAM-ON-GYM V3 icon](assets/icon.svg)
 
 ---
 
@@ -141,31 +143,33 @@ model.save('ppo_multiobj_v3')
 
 ```mermaid
 flowchart LR
-        subgraph SIMULATION
-            Sim[Simulator (simNetPy)] -->|Events & State| Network[Network (links, slots)]
-            Network -->|spectrum state| Metrics[metrics.py]
-        end
-        subgraph RL
-            Env[RlOnEnv] -->|observations| Agent[RL Agent]
-            Agent -->|actions| Env
-            Env -->|invokes| RewardFns[Reward Functions Module]
-        end
-        Metrics -->|features/entropy| RewardFns
-        RewardFns -->|reward| Env
-        Agent -->|training logs| Logger[Trainer & Logger]
-        Logger -->|plots/stats| Dashboard[Plotly]
+    subgraph SIMULATION
+        Sim["Simulator (simNetPy)"] -->|Events and State| Network["Network (links, slots)"]
+        Network -->|Spectrum State| Metrics["metrics.py"]
+    end
+    subgraph RL
+        Env["RlOnEnv"] -->|Observations| Agent["RL Agent"]
+        Agent -->|Actions| Env
+        Env -->|Invokes| RewardFns["Reward Functions Module"]
+    end
+    Metrics -->|features / entropy| RewardFns
+    RewardFns -->|Reward| Env
+    Agent -->|Training Logs| Logger["Trainer & Logger"]
+    Logger -->|Plots / Stats| Dashboard["Plotly Dashboard"]
 ```
 
 ---
 
 ## 🧮 Metricas y Reward Engineering
 
-El módulo `metrics.py` provee:
+- El módulo `metrics.py` provee:
+
 - Fragmentation metrics: external, internal (Shannon entropy) y average-block size
 - Network utilization: por enlace y promedio de red
 - QoT estimators: OSNR heuristics para estimar QoT
 
 Reward functions implementadas:
+
 1. `BaselineReward`: +1 asignado / -1 bloqueado
 2. `QoTAwareReward`: integra OSNR y distancia (penaliza enlaces largos)
 3. `MultiObjectiveReward`: combinación ponderada (blocking, fragmentation, throughput)
@@ -197,7 +201,8 @@ Si vienes desde V2, los puntos clave:
 
 ## 📷 Visualizaciones y cómo crear GIFs
 
-Los plots generados se guardan en `dreamongymv2/reward_functions/plots`. Ejemplos:
+- Los plots generados se guardan en `dreamongymv2/reward_functions/plots`. Ejemplos:
+
 - `blocking_probability.png`
 - `rewards.png`
 - `radar.png` (comparativa multidimensional)
