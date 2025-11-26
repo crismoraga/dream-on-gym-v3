@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#08135a"/>
+      <stop offset="50%" stop-color="#0b69ff"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1200" height="240" fill="url(#bg)" rx="8"/>
+
+  <!-- Soft overlay lines to give motion -->
+  <g opacity="0.12" fill="none" stroke="#ffffff">
+    <path d="M0 140 C150 80, 450 220, 600 160 C750 100, 900 220, 1200 140" stroke-width="2"/>
+    <path d="M0 110 C120 70, 420 200, 600 150 C780 100, 980 190, 1200 120" stroke-width="2"/>
+  </g>
+
+  <!-- Glow bar -->
+  <rect x="0" y="0" width="1200" height="24" fill="url(#glow)"/>
+
+  <!-- left badge/icon area -->
+  <g transform="translate(48,36)">
+    <rect width="168" height="168" rx="12" fill="#0b2e6b" opacity="0.18"/>
+    <g transform="translate(12,12)">
+      <circle cx="72" cy="72" r="72" fill="#ffffff" opacity="0.06"/>
+      <!-- wave -->
+      <path d="M14 84 C46 40, 124 120, 156 74" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M14 96 C46 52, 124 132, 156 86" stroke="#06b6d4" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Main title -->
+  <text x="260" y="96" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700">DREAM-ON-GYM <tspan font-size="36" fill="#ffe082">V3</tspan> — ULTRA</text>
+  <text x="260" y="132" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="18" fill="#e2f7ff">Optimized • Reproducible • Enterprise-ready</text>
+
+  <!-- Tag line / summary -->
+  <text x="260" y="164" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="14" fill="#cceeff">Reward engineering avanzado • Pipelines reproducibles • Dashboards interactivos</text>
+
+  <!-- Accent glow on right side -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.06">
+    <rect x="900" y="18" width="2" height="204"/>
+    <rect x="950" y="8" width="2" height="204"/>
+    <rect x="1000" y="22" width="2" height="204"/>
+  </g>
+</svg>

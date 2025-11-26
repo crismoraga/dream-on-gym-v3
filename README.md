@@ -1,189 +1,239 @@
-# DREAM-ON GYM Deep REinforcement learning freAMwork for Optical Networks
+# DREAM-ON-GYM V3 — ULTRA (Optimized, Enterprise-ready)
 
-**DREAM-ON GYM v2** is a Python Framework which can be configurated as a Network Enviroment for training Agents.
+ [![License](https://img.shields.io/badge/license-MIT-blue.svg)](licenses/LICENSE_GYM.md)  [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org)  [![Status](https://img.shields.io/badge/status-experimental-orange.svg)]()
 
-This framework use the Simulator "Flex Net Sim" [Git-Lab] https://gitlab.com/DaniloBorquez/flex-net-sim
+ [![Docs](https://img.shields.io/badge/Docs-View-blue)](docs/docs/index.md)  [![Examples](https://img.shields.io/badge/Examples-Run-green)](examples/gym/example1.py)  [![Run Quick Eval](https://img.shields.io/badge/QuickEval-run-orange)](dreamongymv2/reward_functions/quick_evaluation.py)  [![Status](https://img.shields.io/badge/status-GitHub-blue)](https://github.com/crismoraga/dream-on-gym-v3)
 
+<!-- Banner -->
+![DREAM-ON-GYM-V3 Banner](assets/banner.svg)
 
-[[_TOC_]]
+<!-- Icon aligned next to title -->
+<img alt="DREAM-ON-GYM V3 icon" src="assets/icon.svg" width="56" height="56" style="vertical-align: middle; margin-top: 1rem; margin-right: 12px;">
 
-## Features
+---
 
-- Load Agents with OpenAI
-- Create your own Optical Network Enviroment
-- Configurate your own reward, done, state and info functions
-- Configurate many parameters:
-	- Start training
-	- Determinate the Step function
-	- Determinate the Reset function
-- Elastic optical networks support
-- Support for different bitrates through a JSON file
-- Support for different networks through a JSON file
-- Support for multiple routes through a JSON file
-- Customize connection arrive/departure ratios
-- Support to create your own statistics
-- Customize the number of connection arrives that you want to simulate
+Un framework avanzado de investigación y desarrollo para entrenamiento por Deep Reinforcement Learning (DRL) en Elastic Optical Networks (EON). DREAM-ON-GYM-V3 es la evolución y reingeniería de **DREAM-ON-GYM-V2**, aportando mayor estabilidad, reproducibilidad, y un conjunto completo de utilidades para evaluación y producción: reward engineering avanzado, pipelines de experimento y dashboards listos para usar.
 
-## Download
+> ¿Por qué V3? V3 está diseñado para investigadores y equipos que necesitan reproducibilidad, comparativa experimental y producción: mejores métricas, integración con SB3, evaluaciones automatizadas y visualización profesional.
 
-Download the latest release from the [release list](https://gitlab.com/IRO-Team/dream-on-gym-v2.0). 
+---
 
-If you want to try the current in-development version (which could be unstable), you can clone this repository through the git clone command.
+## 📚 Índice
 
+- Resumen y Valor
+- Que hay de nuevo en V3
+- Caracteristicas principales
+- Instalacion rapida
+- Quickstart / Demo
+- Ejemplos y Entrenamiento (PPO)
+- Arquitectura & Diagrama Mermaid
+- Metricas & Reward Engineering
+- Evaluacion y Pipelines reproducibles
+- Migracion V2 → V3 (guia rapida)
+- Contribuir y contactos
+- Changelog & Licencia
+
+---
+
+## 📌 Resumen & Valor
+
+DREAM-ON-GYM-V3 es una plataforma de investigación enfocada en:
+
+- Entrenamiento de agentes DRL sobre una simulación realista de redes ópticas elásticas.
+- Evaluación reproducible de reward functions (incluye una `SpectralEntropyAdaptiveReward` novedosa basada en entropía espectral de la red).
+- Fácil integración con Stable-Baselines3 y Gymnasium para experimentos científicos y pruebas de producción.
+
+Valor diferencial:
+
+- Reproducibilidad: `run_experiments.py` exporta JSON y PNG; seeds configurables.
+- Reusable experiments: scripts parametrizados para topologías NSFNet, GermanNet, ItalianNet, y más.
+- Integración lista para pipelines empresariales: CI/CD, benchmarks y visualización interactiva.
+
+---
+
+## 🔄 Que hay de nuevo en V3
+
+| Área | DREAM-ON-GYM-V2 | DREAM-ON-GYM-V3 (ULTRA) |
+|------|------------------|-------------------------|
+| Core | Implementaciones iniciales y ejemplos | Reingeniería: modularidad, estabilidad y testeo reproducible |
+| Reward functions | Básicos (+1/-1) | 5 rewards: Baseline, QoT-Aware, Multi-Objective, Fragmentation-Aware, SpectralEntropyAdaptiveReward (NOVEL) |
+| Evaluación | Scripts seccionados | `quick_evaluation`, `full_evaluation`, `run_experiments` (pipelines reproducibles) |
+| Visualización | Básica | Radar, Heatmaps, Boxplots, distribution plots + dashboard Plotly |
+| Integración | Stable-Baselines (limitado) | Gymnasium + Stable-Baselines3 + sb3-contrib, compatible con PyTorch/TF backends |
+| Reproducibilidad | Parcial | Resultados exportables (JSON/PNG) y configuración determinista (seeds) |
+
+---
+
+## ⚙️ Características principales
+
+- Soporte full EON con multi-bandas (L,C,S,E,O) y slots por enlace.
+- Reward engineering avanzado: QoT-aware, fragmentation-sensitive y adaptativo por entropía.
+- Funciones de métricas integradas en `metrics.py` (fragmentation ratio, entropy, utilization, QoT estimators).
+- Scripts de evaluación (rápidos y completos) y dashboards con visualizaciones automáticas.
+
+---
+
+## 💾 Instalación rápida
+
+Recomendado: Python 3.10, entornos virtuales. Ejemplo PowerShell (Windows):
+
+```powershell
+python -m venv .venv310
+. .\.venv310\Scripts\Activate.ps1
+pip install -U pip setuptools wheel
+pip install -e .
 ```
-git clone git@gitlab.com:IRO-Team/dream-on-gym-v2.git
+
+Dependencias principales: numpy, gymnasium, stable-baselines3, sb3-contrib, tensorflow (opcional), matplotlib, pandas, mpi4py.
+
+Para GPU: instale la versión de `tensorflow` y `torch` con soporte CUDA acorde a su entorno.
+
+---
+
+## ✨ Quickstart — Demo y evaluación rápida
+
+1. Demo interactiva (evaluación y ejemplos):
+
+```powershell
+python -m dreamongymv2.reward_functions.demo
 ```
 
-## Pre-Installation
+1. Quick evaluation con generación de gráficos:
 
-### Nvidia requirements:
-+ Max Versión of Nvidia CUDA Toolkit September 2018
+```powershell
+python -m dreamongymv2.reward_functions.quick_evaluation
+```
 
-### Windows requirements:
-+ Install Microsoft Visual Build Tool 2019 or above
-+ You must add two environment variables in Windows
-+ MPILib C:\Program Files (x86)\Microsoft SDKs\MPI\Lib
-+ MPI C:\Program Files (x86)\Microsoft SDKs\MPI
-+ Install [MDI Versión 10.0] (https://www.microsoft.com/en-us/download/details.aspx?id=57467)
+1. Evaluación completa con simulaciones y reporte:
 
-### Version requirements:
-+ Python = [3.10.6] (https://www.python.org/downloads/release/python-3711/)
-+ The last Stable-Baselines = [SB3] (https://github.com/DLR-RM/stable-baselines3)
-	+ Please install from git version, download, unzip, and then into the unzipped folder: pip install .
-+ The Last Tensor-flow = 2.12.0 or great
-	+ For GPU users: pip install tensorflow[and-cuda]
-	+ For CPU users: pip install tensorflow
-+ Protobuf = 4.22.3 or great 
-	+ pip install protobuf
-+ Gymnasium = 0.28.1
-	+ pip install gymnasium
-+ pip install mpi4py (For this step, you need the Windows requirements complete installed)
+```powershell
+python -m dreamongymv2.reward_functions.full_evaluation
+```
 
+1. Ejecutar ejemplo de entrenamiento (PPO) — ver `examples/gym`:
 
-## Installation
+```powershell
+python -m dreamongymv2.reward_functions.examples
+```
 
-The latest release can be downloaded to install our tool, or the git code can be cloned.
-Later, go to the root folder and execute the "pip install" command in the console.
+---
 
+## 🧪 Ejemplo de entrenamiento (PPO)
 
-## Using  Framework
- 
-- The Framework loads an Optical Network Environment to train Agents with Reinforcement Learning.
-- This Framework can be used as an Application and to adapt the code for training Agents in Optical Networks flexibly.
-- The example folder contains examples files.
-- In the examples, the agent, parameters, hyperparameters, and network, among other parameters, can be modified.
-- Any function can be modified, such as the reward, action, state, done, and info functions.
+Snippet mínimo con Stable-Baselines3:
 
-# Simple Example
+```python
+from stable_baselines3 import PPO
+from dreamongymv2.gym_basic.envs.rl_on_env import RlOnEnv
+from dreamongymv2.reward_functions import MultiObjectiveReward
 
-To use the framework package using pip install execute the following command [pip](https://pip.pypa.io/en/stable/) to install dream-on-gym-v2.
+env = RlOnEnv(reward_fn=MultiObjectiveReward())
+model = PPO('MlpPolicy', env, verbose=1)
+model.learn(total_timesteps=10000)
+model.save('ppo_multiobj_v3')
+```
+
+> Nota: Revisa `examples.py` para ejecuciones reproducibles con seeds y checkpoints.
+
+---
+
+## 🏗 Arquitectura (visión general)
+
+```mermaid
+flowchart LR
+        subgraph SIMULATION
+            Sim[Simulator (simNetPy)] -->|Events & State| Network[Network (links, slots)]
+            Network -->|spectrum state| Metrics[metrics.py]
+        end
+        subgraph RL
+            Env[RlOnEnv] -->|observations| Agent[RL Agent]
+            Agent -->|actions| Env
+            Env -->|invokes| RewardFns[Reward Functions Module]
+        end
+        Metrics -->|features/entropy| RewardFns
+        RewardFns -->|reward| Env
+        Agent -->|training logs| Logger[Trainer & Logger]
+        Logger -->|plots/stats| Dashboard[Plotly]
+```
+
+---
+
+## 🧮 Metricas y Reward Engineering
+
+El módulo `metrics.py` provee:
+- Fragmentation metrics: external, internal (Shannon entropy) y average-block size
+- Network utilization: por enlace y promedio de red
+- QoT estimators: OSNR heuristics para estimar QoT
+
+Reward functions implementadas:
+1. `BaselineReward`: +1 asignado / -1 bloqueado
+2. `QoTAwareReward`: integra OSNR y distancia (penaliza enlaces largos)
+3. `MultiObjectiveReward`: combinación ponderada (blocking, fragmentation, throughput)
+4. `FragmentationAwareReward`: penaliza fragmentación externa e interna
+5. `SpectralEntropyAdaptiveReward` (NOVEL): usa entropía de Shannon para zonificar la red y ajustar bonificaciones/penalizaciones
+
+---
+
+## 📊 Evaluacion y Pipelines reproducibles
+
+- `quick_evaluation.py`: run rapide, guarda PNG en `reward_functions/plots`
+- `full_evaluation.py`: corre el simulador para múltiples cargas y topologías, guarda JSON y plots
+- `run_experiments.py`: pipeline completo para replicar experimentos (multi-topologías, ρs, repeticiones)
+
+**Reproducibilidad:** Configure seeds antes de `sim.init()` para garantizar resultados determinísticos (ej. `sim.setSeedArrive(42)` etc.).
+
+---
+
+## 🔬 Migracion V2 → V3 — Guia rápida
+
+Si vienes desde V2, los puntos clave:
+
+- API de reward: ahora el `calculate()` acepta `allocated` y `network` (más rico en contexto).
+- Los scripts de evaluación (`quick_evaluation`, `full_evaluation`) reemplazan pruebas ad-hoc y facilitan benchmarking.
+- `SpectralEntropyAdaptiveReward` es una función nueva que exige `metrics.get_network_spectrum_state(network)` o equivalente.
+- Para migrar wrappers: asegúrate de inyectar la instancia `reward_fn` al crear el env: `RlOnEnv(reward_fn=SpectralEntropyAdaptiveReward())`.
+
+---
+
+## 📷 Visualizaciones y cómo crear GIFs
+
+Los plots generados se guardan en `dreamongymv2/reward_functions/plots`. Ejemplos:
+- `blocking_probability.png`
+- `rewards.png`
+- `radar.png` (comparativa multidimensional)
+
+Para crear GIFs a partir de PNGs (ImageMagick / ffmpeg):
 
 ```bash
-pip install dream-on-gym-v2
+magick convert -delay 20 -loop 0 plots/radar_*.png plots/radar.gif
+# or
+ffmpeg -framerate 10 -pattern_type glob -i 'plots/radar_*.png' -vf "scale=800:-1" plots/radar.gif
 ```
 
-## Reward Function
-As an example, we use the standard reward function, which returns "1" if the connection is allocated, else "-1".
-```python
-def reward():
-    value = env.getSimulator().lastConnectionIsAllocated()
-    if (value.name == Controller.Status.Not_Allocated.name):
-        value = -1
-    else:
-        value = 1
-    return value
-```
+---
 
+## 🧰 Para integraciones enterprise
 
-## Load Enviroment
+- Use `run_experiments.py` y exporte JSON + PNG como artefactos para su pipeline CI/CD.
+- Para entrenamiento intensivo, configure GPU y entorno reproducible.
+- Para despliegues research → production: validar reproducibilidad, tests y métricas en cada release.
 
-```python
-import os
-import gym
-from simNetGymPy import *
-import que-dificl
+---
 
-# Get local path's
-absolutepath = os.path.abspath(__file__)
-fileDirectory = os.path.dirname(absolutepath)
+## 👩‍💻 Contribuir
 
-#Create the que-dificil Enviroment
-env = gym.make("rlonenv-v0")
+1. Fork & branch: `git checkout -b feature/mi-feature`
+2. Agrega tests reproducibles y un ejemplo mínimo
+3. Abre PR con descripción, métricas y artefactos (plots, CSV, JSON)
+4. Ejecuta `pytest` y valida ejemplos de `examples/gym`
 
-#Set the reward function
-env.setRewardFunc(reward)
+---
 
-#Load the simulator statements and the allocator function 'first_fit_algorithm'
-env.initEnviroment(fileDirectory + "/NSFNet.json", fileDirectory + "/NSFNet_routes.json")
-env.getSimulator()._goalConnections = 10000
-env.getSimulator().setAllocator(first_fit_algorithm)
-env.getSimulator().init()
+## 📜 Changelog & Licencia
 
-#Start the simulator with goal connections times and without Agent interaction
-env.start()
-#Load the PPO2 Agent
-model = PPO2(MlpPolicy, env, verbose=False)
-#Start training in the simulator with 100 interation more, but with Agent interaction
-model.learn(total_timesteps=100)
-```
+- **v3.0.0** — Reingeniería, 5 reward functions, pipelines y dashboards
+- **v2.0.0** — Implementación inicial: ejemplos y la conexión inicial con Flex-Net-Sim
 
-## Allocation function
+Licencias: revisa `licenses/` para los detalles de licencias incluidas (Flex-Net-Sim y otros componentes)
 
-The allocation function is the essential function for using this framework correctly. This function is called whenever one connection wants to start the connection.
-The function receives from the environment seven parameters:
- 
-- src: The ID from the source node.
-- dst: The ID from the destiny node.
-- b: The random BitRate assigned by the Simulator.
-- c: Connection Object
-- n: Network Object
-- path: Array list containing the possible connections routes.
-- action: Answer from Agent 
-
-In this example, the Agent decides which route (path) must be used to assign the network connection.
-
-```python
-def first_fit_algorithm(src: int, dst: int, b: BitRate, c: Connection, n: Network, path, action):
-    numberOfSlots = b.getNumberofSlots(0)
-    actionSpace = len(path[src][dst])
-
-    if action is not None:
-        if action == actionSpace:
-            action = action - 1
-        link_ids = path[src][dst][action]
-    else:
-        link_ids = path[src][dst][0]
-    general_link = []
-    for _ in range(n.getLink(0).getSlots()):
-        general_link.append(False)
-    for link in link_ids:
-        link = n.getLink(link._id)
-        for slot in range(link.getSlots()):
-            general_link[slot] = general_link[slot] or link.getSlot(
-                slot)
-    currentNumberSlots = 0
-    currentSlotIndex = 0
-    
-    for j in range(len(general_link)):
-        if not general_link[j]:
-            currentNumberSlots += 1
-        else:
-            currentNumberSlots = 0
-            currentSlotIndex = j + 1
-        if currentNumberSlots == numberOfSlots:
-            for k in link_ids:
-                c.addLink(
-                    k, fromSlot=currentSlotIndex, toSlot=currentSlotIndex+currentNumberSlots)
-            return Controller.Status.Allocated, c
-    return Controller.Status.Not_Allocated, c
-```
-## Documentation
-
-
-
-## Acknowledgement
-
-The following participants are greatly appreciated:
-- [Gonzalo España](https://gitlab.com/GonzaloEspana)
-- [Erick Viera]
-- [Juan Pablo Sanchez]
+---
