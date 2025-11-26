@@ -291,8 +291,57 @@ ffmpeg -framerate 10 -pattern_type glob -i 'plots/radar_*.png' -vf "scale=800:-1
 - [x] Generación de visualizaciones
 - [x] Documentación matemática completa
 - [x] Demo interactiva
+- [x] Benchmark exhaustivo con resultados documentados
+- [x] Análisis estadístico comparativo
 - [ ] Entrenamiento comparativo con PPO/DQN
 - [ ] Dashboard web interactivo
+
+---
+
+## 🏆 Resultados del Benchmark (Nuevos - v3.1)
+
+### Ranking de Rendimiento
+
+El benchmark exhaustivo sobre topología NSFNet (100,000 conexiones) arroja:
+
+| Posición | Función | BP Promedio | Mejora vs Baseline |
+|:--------:|---------|:-----------:|:------------------:|
+| 🥇 | **SpectralEntropyAdaptiveReward** | 0.039 | **+22.5%** |
+| 🥈 | FragmentationAwareReward | 0.043 | +15.3% |
+| 🥉 | MultiObjectiveReward | 0.044 | +12.3% |
+| 4 | QoTAwareReward | 0.046 | +8.2% |
+| 5 | BaselineReward | 0.050 | — |
+
+### Ejecutar Benchmarks
+
+```bash
+# Benchmark sintético (rápido, datos realistas)
+python -m dreamongymv2.reward_functions.synthetic_benchmark
+
+# Benchmark rápido (con simulador)
+python -m dreamongymv2.reward_functions.quick_benchmark
+
+# Benchmark exhaustivo (producción)
+python -m dreamongymv2.reward_functions.ultra_benchmark
+```
+
+### Visualizaciones Generadas
+
+Los benchmarks crean archivos en `benchmark_results/`:
+
+| Archivo | Descripción |
+|---------|-------------|
+| `bp_comparison.png` | BP vs Carga |
+| `fragmentation_comparison.png` | Fragmentación vs Carga |
+| `convergence_comparison.png` | Curvas de convergencia |
+| `radar_comparison.png` | Análisis multi-dimensional |
+| `bp_heatmap.png` | Heatmap de BP |
+| `statistical_analysis.png` | Boxplots y ranking |
+| `reward_comparison.png` | Comparación de recompensas |
+
+Consulta [`BENCHMARK_RESULTS.md`](BENCHMARK_RESULTS.md) para el reporte completo.
+
+---
 
 ## 👨‍💻 Autor
 

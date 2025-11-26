@@ -1,0 +1,41 @@
+======================================================================
+RESUMEN DE BENCHMARK - FUNCIONES DE RECOMPENSA
+======================================================================
+
+RANKING POR BLOCKING PROBABILITY (menor es mejor):
+--------------------------------------------------
+  1. Baseline: BP=0.5000
+  2. QoT-Aware: BP=0.5000
+  3. MultiObjective: BP=0.5000
+  4. FragmentationAware: BP=0.5000
+  5. SpectralEntropy: BP=0.5000
+
+MÉTRICAS DETALLADAS POR CARGA:
+--------------------------------------------------
+
+📊 Carga = 0.3
+  • Baseline: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • QoT-Aware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • MultiObjective: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • FragmentationAware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • SpectralEntropy: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+
+📊 Carga = 0.6
+  • Baseline: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • QoT-Aware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • MultiObjective: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • FragmentationAware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • SpectralEntropy: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+
+📊 Carga = 0.9
+  • Baseline: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • QoT-Aware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • MultiObjective: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • FragmentationAware: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+  • SpectralEntropy: BP=0.5000±0.0000, Frag=0.5000, Reward=0.00
+
+======================================================================
+CONCLUSIÓN:
+  🏆 Mejor función: Baseline
+     (BP promedio: 0.5000)
+======================================================================

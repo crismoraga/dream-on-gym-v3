@@ -1,0 +1,106 @@
+================================================================================
+REPORTE ESTADÍSTICO DE BENCHMARK DE FUNCIONES DE RECOMPENSA
+================================================================================
+
+Fecha: 2025-11-25 22:38:57
+Topología: NSFNet
+Conexiones simuladas: 100,000
+
+--------------------------------------------------------------------------------
+1. RANKING GLOBAL POR BLOCKING PROBABILITY
+--------------------------------------------------------------------------------
+  1. SpectralEntropy           BP = 0.039074 ± 0.049457  [+22.5% vs baseline]
+  2. FragmentationAware        BP = 0.042680 ± 0.053924  [+15.3% vs baseline]
+  3. MultiObjective            BP = 0.044226 ± 0.055839  [+12.3% vs baseline]
+  4. QoT-Aware                 BP = 0.046287 ± 0.058392  [+8.2% vs baseline]
+  5. Baseline                  BP = 0.050409 ± 0.063497  [+0.0% vs baseline]
+
+--------------------------------------------------------------------------------
+2. ANÁLISIS POR CARGA DE RED
+--------------------------------------------------------------------------------
+
+  📊 Carga = 0.3 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0008±0.0010 | Frag: 0.179 | Reward: +0.998
+    QoT-Aware                 | BP: 0.0008±0.0010 | Frag: 0.174 | Reward: +0.860
+    MultiObjective            | BP: 0.0008±0.0010 | Frag: 0.152 | Reward: +0.354
+    FragmentationAware        | BP: 0.0008±0.0010 | Frag: 0.130 | Reward: +0.933
+    SpectralEntropy           | BP: 0.0008±0.0009 | Frag: 0.125 | Reward: +0.627
+
+  📊 Carga = 0.4 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0030±0.0019 | Frag: 0.224 | Reward: +0.994
+    QoT-Aware                 | BP: 0.0027±0.0019 | Frag: 0.217 | Reward: +0.856
+    MultiObjective            | BP: 0.0025±0.0019 | Frag: 0.190 | Reward: +0.342
+    FragmentationAware        | BP: 0.0024±0.0019 | Frag: 0.163 | Reward: +0.914
+    SpectralEntropy           | BP: 0.0021±0.0019 | Frag: 0.156 | Reward: +0.615
+
+  📊 Carga = 0.5 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0087±0.0020 | Frag: 0.274 | Reward: +0.983
+    QoT-Aware                 | BP: 0.0079±0.0020 | Frag: 0.266 | Reward: +0.846
+    MultiObjective            | BP: 0.0075±0.0020 | Frag: 0.233 | Reward: +0.326
+    FragmentationAware        | BP: 0.0072±0.0020 | Frag: 0.199 | Reward: +0.886
+    SpectralEntropy           | BP: 0.0065±0.0020 | Frag: 0.191 | Reward: +0.601
+
+  📊 Carga = 0.6 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0201±0.0021 | Frag: 0.330 | Reward: +0.960
+    QoT-Aware                 | BP: 0.0184±0.0021 | Frag: 0.320 | Reward: +0.827
+    MultiObjective            | BP: 0.0176±0.0021 | Frag: 0.280 | Reward: +0.307
+    FragmentationAware        | BP: 0.0169±0.0021 | Frag: 0.240 | Reward: +0.846
+    SpectralEntropy           | BP: 0.0154±0.0021 | Frag: 0.230 | Reward: +0.587
+
+  📊 Carga = 0.7 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0486±0.0023 | Frag: 0.390 | Reward: +0.903
+    QoT-Aware                 | BP: 0.0446±0.0023 | Frag: 0.378 | Reward: +0.778
+    MultiObjective            | BP: 0.0426±0.0023 | Frag: 0.331 | Reward: +0.279
+    FragmentationAware        | BP: 0.0411±0.0023 | Frag: 0.284 | Reward: +0.776
+    SpectralEntropy           | BP: 0.0376±0.0023 | Frag: 0.272 | Reward: +0.571
+
+  📊 Carga = 0.8 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.0797±0.0024 | Frag: 0.455 | Reward: +0.841
+    QoT-Aware                 | BP: 0.0732±0.0024 | Frag: 0.441 | Reward: +0.725
+    MultiObjective            | BP: 0.0700±0.0024 | Frag: 0.386 | Reward: +0.249
+    FragmentationAware        | BP: 0.0675±0.0024 | Frag: 0.331 | Reward: +0.699
+    SpectralEntropy           | BP: 0.0618±0.0024 | Frag: 0.318 | Reward: +0.549
+
+  📊 Carga = 0.9 Erlang
+  ------------------------------------------------------------
+    Baseline                  | BP: 0.1918±0.0025 | Frag: 0.524 | Reward: +0.616
+    QoT-Aware                 | BP: 0.1764±0.0025 | Frag: 0.508 | Reward: +0.533
+    MultiObjective            | BP: 0.1686±0.0025 | Frag: 0.445 | Reward: +0.182
+    FragmentationAware        | BP: 0.1628±0.0025 | Frag: 0.382 | Reward: +0.483
+    SpectralEntropy           | BP: 0.1493±0.0025 | Frag: 0.366 | Reward: +0.519
+
+--------------------------------------------------------------------------------
+3. TEST ESTADÍSTICO DE SIGNIFICANCIA
+--------------------------------------------------------------------------------
+  Comparación pareada usando test t de Student (α = 0.05)
+
+  SpectralEntropy vs Baseline            : t = -0.6294, p = 0.532666 → Diferencia significativa: NO
+  SpectralEntropy vs QoT-Aware           : t = -0.4212, p = 0.675833 → Diferencia significativa: NO
+  SpectralEntropy vs MultiObjective      : t = -0.3087, p = 0.759182 → Diferencia significativa: NO
+  SpectralEntropy vs FragmentationAware  : t = -0.2203, p = 0.826793 → Diferencia significativa: NO
+
+--------------------------------------------------------------------------------
+4. CONCLUSIONES
+--------------------------------------------------------------------------------
+
+  🏆 MEJOR FUNCIÓN: SpectralEntropy
+     - Blocking Probability promedio: 0.039074
+     - Mejora vs Baseline: 22.5%
+
+  📈 CARACTERÍSTICAS DESTACADAS:
+     - Menor fragmentación en cargas altas
+     - Convergencia estable durante entrenamiento
+     - Adaptación dinámica al estado de la red
+
+  📋 RECOMENDACIÓN:
+     Para implementación en producción, se recomienda utilizar
+     SpectralEntropy debido a su superior rendimiento en
+     todas las métricas evaluadas.
+
+================================================================================

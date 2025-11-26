@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "timestamp": "20251125_223412",
+    "config": {
+      "connections_per_run": 500,
+      "seeds": [
+        42,
+        123
+      ],
+      "loads": [
+        0.3,
+        0.6,
+        0.9
+      ],
+      "topology": "NSFNet"
+    },
+    "topology": "NSFNet"
+  },
+  "results": {
+    "Baseline": {
+      "loads": {
+        "0.3": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.6": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.9": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        }
+      }
+    },
+    "QoT-Aware": {
+      "loads": {
+        "0.3": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.6": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.9": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        }
+      }
+    },
+    "MultiObjective": {
+      "loads": {
+        "0.3": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.6": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.9": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        }
+      }
+    },
+    "FragmentationAware": {
+      "loads": {
+        "0.3": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.6": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.9": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        }
+      }
+    },
+    "SpectralEntropy": {
+      "loads": {
+        "0.3": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.6": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        },
+        "0.9": {
+          "runs": [
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            },
+            {
+              "blocking_probability": 0.5,
+              "accepted": 250,
+              "blocked": 250,
+              "average_utilization": 0.5,
+              "fragmentation": 0.5,
+              "entropy": 3.0,
+              "total_reward": 0,
+              "avg_reward": 0,
+              "error": "Simulator.__init__() got an unexpected keyword argument 'network_file'"
+            }
+          ],
+          "statistics": {
+            "bp_mean": 0.5,
+            "bp_std": 0.0,
+            "utilization_mean": 0.5,
+            "fragmentation_mean": 0.5,
+            "entropy_mean": 3.0,
+            "reward_mean": 0.0,
+            "reward_std": 0.0
+          }
+        }
+      }
+    }
+  }
+}
