@@ -1,0 +1,5 @@
+site_name: Documentation DREAM ON GYM
+nav:
+  - Inicio: 'index.md'
+  - Acerca de: 'abount.md'
+theme: readthedocs

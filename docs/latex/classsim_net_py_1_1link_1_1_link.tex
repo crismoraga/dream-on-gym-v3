@@ -1,0 +1,195 @@
+\doxysection{sim\+Net\+Py.\+link.\+Link Class Reference}
+\hypertarget{classsim_net_py_1_1link_1_1_link}{}\label{classsim_net_py_1_1link_1_1_link}\index{simNetPy.link.Link@{simNetPy.link.Link}}
+
+
+Created on Mon Jan 24 14\+:37\+:03 2022.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a1c172a2c551a835187d07598af9ce724}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a26df19e78365e8adb27e4b5e3216f870}{id}}=-\/1, \mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_ab0596c6ce4a34f8dad23c06640bb846c}{length}}=1, \mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a45b7e30c2607d55a9fb4f4499e1f61c0}{slots}}=-\/1, bands=None)
+\begin{DoxyCompactList}\small\item\em Constructor Initializes the slots per band, also leaving the selected band as "{}\+No\+Band"{} by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_aa744b2e3be1a2804e5c6f2196b3ae192}{set\+Slots}} (self, \mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a45b7e30c2607d55a9fb4f4499e1f61c0}{slots}}, band=None)
+\begin{DoxyCompactList}\small\item\em Set\+Slots It adjusts the number of slots available on the link, in a given band. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_afd5c6e32bc045b5578962afdf642b6ee}{get\+Bands}} (self)
+\begin{DoxyCompactList}\small\item\em get\+Bands \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a6fdc2e1e41e35ac7f004e6a201ae722f}{is\+Band\+Enabled}} (self, band)
+\begin{DoxyCompactList}\small\item\em is\+Band\+Enabled \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a669da010d78eb8a7e5b60fec6289a9a5}{get\+Slots}} (self, band=None)
+\begin{DoxyCompactList}\small\item\em get\+Slots \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a615bc1c5d5ac0e686bb394c42b1eb30e}{get\+Slot}} (self, id\+Slot, band=None)
+\begin{DoxyCompactList}\small\item\em get\+Slot \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a95581064232c18b3a24499d2c03d6f48}{info}} (self, band=None)
+\begin{DoxyCompactList}\small\item\em info Print a pretty form to see the used slots of the link \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a806b0e09d7a0c5b24849cbcf4b24e9e2}{band\+Selected}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a45b7e30c2607d55a9fb4f4499e1f61c0}{slots}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_a26df19e78365e8adb27e4b5e3216f870}{id}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_ab0596c6ce4a34f8dad23c06640bb846c}{length}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_ae06bd14fb818391ff0d458a7bee2c816}{src}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1link_1_1_link_ac574810ab235a029a0fcc3cda3cfe84f}{dst}} = property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Created on Mon Jan 24 14\+:37\+:03 2022. 
+
+\begin{DoxyAuthor}{Author}
+\+: redno
+\end{DoxyAuthor}
+\doxylink{classsim_net_py_1_1link_1_1_link}{Link} Class that connects between two nodes, has an id, size, slot number and identifies the source node and the destination node. 
+
+\label{doc-constructors}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a1c172a2c551a835187d07598af9ce724}\index{simNetPy.link.Link@{simNetPy.link.Link}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a1c172a2c551a835187d07598af9ce724} 
+sim\+Net\+Py.\+link.\+Link.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id}{ = {\ttfamily -\/1}, }\item[{}]{length}{ = {\ttfamily 1}, }\item[{}]{slots}{ = {\ttfamily -\/1}, }\item[{}]{bands}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Constructor Initializes the slots per band, also leaving the selected band as "{}\+No\+Band"{} by default. 
+
+\begin{DoxyParagraph}{Default}
+id source node\+: -\/1 id destiny node\+: -\/1 
+\end{DoxyParagraph}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_afd5c6e32bc045b5578962afdf642b6ee}\index{simNetPy.link.Link@{simNetPy.link.Link}!getBands@{getBands}}
+\index{getBands@{getBands}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{getBands()}{getBands()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_afd5c6e32bc045b5578962afdf642b6ee} 
+sim\+Net\+Py.\+link.\+Link.\+get\+Bands (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+get\+Bands 
+
+\begin{DoxyReturn}{Returns}
+Gets the array of slots by bands. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a615bc1c5d5ac0e686bb394c42b1eb30e}\index{simNetPy.link.Link@{simNetPy.link.Link}!getSlot@{getSlot}}
+\index{getSlot@{getSlot}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{getSlot()}{getSlot()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a615bc1c5d5ac0e686bb394c42b1eb30e} 
+sim\+Net\+Py.\+link.\+Link.\+get\+Slot (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id\+Slot}{, }\item[{}]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+get\+Slot 
+
+\begin{DoxyReturn}{Returns}
+True or false, if the slot is used or not. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a669da010d78eb8a7e5b60fec6289a9a5}\index{simNetPy.link.Link@{simNetPy.link.Link}!getSlots@{getSlots}}
+\index{getSlots@{getSlots}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{getSlots()}{getSlots()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a669da010d78eb8a7e5b60fec6289a9a5} 
+sim\+Net\+Py.\+link.\+Link.\+get\+Slots (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+get\+Slots 
+
+\begin{DoxyReturn}{Returns}
+Array of slots in some band. If the band None, return the band\+Selected slot array. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a95581064232c18b3a24499d2c03d6f48}\index{simNetPy.link.Link@{simNetPy.link.Link}!info@{info}}
+\index{info@{info}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a95581064232c18b3a24499d2c03d6f48} 
+sim\+Net\+Py.\+link.\+Link.\+info (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+info Print a pretty form to see the used slots of the link 
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a6fdc2e1e41e35ac7f004e6a201ae722f}\index{simNetPy.link.Link@{simNetPy.link.Link}!isBandEnabled@{isBandEnabled}}
+\index{isBandEnabled@{isBandEnabled}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{isBandEnabled()}{isBandEnabled()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a6fdc2e1e41e35ac7f004e6a201ae722f} 
+sim\+Net\+Py.\+link.\+Link.\+is\+Band\+Enabled (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{band}{}\end{DoxyParamCaption})}
+
+
+
+is\+Band\+Enabled 
+
+\begin{DoxyReturn}{Returns}
+If the band is available. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_aa744b2e3be1a2804e5c6f2196b3ae192}\index{simNetPy.link.Link@{simNetPy.link.Link}!setSlots@{setSlots}}
+\index{setSlots@{setSlots}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{setSlots()}{setSlots()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_aa744b2e3be1a2804e5c6f2196b3ae192} 
+sim\+Net\+Py.\+link.\+Link.\+set\+Slots (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{slots}{, }\item[{}]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Set\+Slots It adjusts the number of slots available on the link, in a given band. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slots} & Configure the quantity of nodes in the link in some band. \\
+\hline
+{\em band} & No Band @\+Default None \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a806b0e09d7a0c5b24849cbcf4b24e9e2}\index{simNetPy.link.Link@{simNetPy.link.Link}!bandSelected@{bandSelected}}
+\index{bandSelected@{bandSelected}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{bandSelected}{bandSelected}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a806b0e09d7a0c5b24849cbcf4b24e9e2} 
+sim\+Net\+Py.\+link.\+Link.\+band\+Selected = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_ac574810ab235a029a0fcc3cda3cfe84f}\index{simNetPy.link.Link@{simNetPy.link.Link}!dst@{dst}}
+\index{dst@{dst}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{dst}{dst}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_ac574810ab235a029a0fcc3cda3cfe84f} 
+sim\+Net\+Py.\+link.\+Link.\+dst = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a26df19e78365e8adb27e4b5e3216f870}\index{simNetPy.link.Link@{simNetPy.link.Link}!id@{id}}
+\index{id@{id}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a26df19e78365e8adb27e4b5e3216f870} 
+sim\+Net\+Py.\+link.\+Link.\+id = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_ab0596c6ce4a34f8dad23c06640bb846c}\index{simNetPy.link.Link@{simNetPy.link.Link}!length@{length}}
+\index{length@{length}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_ab0596c6ce4a34f8dad23c06640bb846c} 
+sim\+Net\+Py.\+link.\+Link.\+length = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_a45b7e30c2607d55a9fb4f4499e1f61c0}\index{simNetPy.link.Link@{simNetPy.link.Link}!slots@{slots}}
+\index{slots@{slots}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{slots}{slots}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_a45b7e30c2607d55a9fb4f4499e1f61c0} 
+sim\+Net\+Py.\+link.\+Link.\+slots = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1link_1_1_link_ae06bd14fb818391ff0d458a7bee2c816}\index{simNetPy.link.Link@{simNetPy.link.Link}!src@{src}}
+\index{src@{src}!simNetPy.link.Link@{simNetPy.link.Link}}
+\doxysubsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1link_1_1_link_ae06bd14fb818391ff0d458a7bee2c816} 
+sim\+Net\+Py.\+link.\+Link.\+src = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/\mbox{\hyperlink{link_8py}{link.\+py}}\end{DoxyCompactItemize}

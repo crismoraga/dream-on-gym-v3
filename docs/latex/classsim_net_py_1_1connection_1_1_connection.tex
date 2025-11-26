@@ -1,0 +1,124 @@
+\doxysection{sim\+Net\+Py.\+connection.\+Connection Class Reference}
+\hypertarget{classsim_net_py_1_1connection_1_1_connection}{}\label{classsim_net_py_1_1connection_1_1_connection}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+
+
+\doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} Indicates which links and how many slots a connection between two users has.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_a946d1e843723738d12145726361f8bd4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_a27f0678958c587dd978d9c2747ee1f9a}{id}})
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_aa341d1ac2f28cc2b234071ac366ddd9e}{add\+Link}} (self, int id\+Link, int \mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_ac6570c06ad92eb1ba9f8b42848fc3397}{slots}})
+\begin{DoxyCompactList}\small\item\em add\+Link Adds a link to the connection with a slot amount. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_a868a29184cb35f3742dca4f768e9a793}{add\+Link}} (self, id\+Link, int from\+Slot, int to\+Slot)
+\begin{DoxyCompactList}\small\item\em add\+Link Adds a link to the connection with a range of slots amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_adb32c38f3d56e0cf6fd6953122f2534b}{band\+Selected}} = property
+\begin{DoxyCompactList}\small\item\em band\+Selected This property changes the selected band, it can be\+: 1) No\+Band 2) C 3) L 4) S 5) E \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_a27f0678958c587dd978d9c2747ee1f9a}{id}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_ac8b2dc4d2e632da48669a456d2b25dc8}{links}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1connection_1_1_connection_ac6570c06ad92eb1ba9f8b42848fc3397}{slots}} = property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} Indicates which links and how many slots a connection between two users has. 
+
+\begin{DoxyAuthor}{Author}
+\+: redno 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_a946d1e843723738d12145726361f8bd4}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_a946d1e843723738d12145726361f8bd4} 
+sim\+Net\+Py.\+connection.\+Connection.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection}, Integer Default values\+: \\
+\hline
+{\em Band} & "{}\+No\+Band"{} \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_a868a29184cb35f3742dca4f768e9a793}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!addLink@{addLink}}
+\index{addLink@{addLink}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_a868a29184cb35f3742dca4f768e9a793} 
+sim\+Net\+Py.\+connection.\+Connection.\+add\+Link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id\+Link}{, }\item[{int}]{from\+Slot}{, }\item[{int}]{to\+Slot}{}\end{DoxyParamCaption})}
+
+
+
+add\+Link Adds a link to the connection with a range of slots amount. 
+
+\begin{DoxyVerb}int idLink
+int fromSlot
+int toSlot
+\end{DoxyVerb}
+ \Hypertarget{classsim_net_py_1_1connection_1_1_connection_aa341d1ac2f28cc2b234071ac366ddd9e}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!addLink@{addLink}}
+\index{addLink@{addLink}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_aa341d1ac2f28cc2b234071ac366ddd9e} 
+sim\+Net\+Py.\+connection.\+Connection.\+add\+Link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{id\+Link}{, }\item[{int}]{slots}{}\end{DoxyParamCaption})}
+
+
+
+add\+Link Adds a link to the connection with a slot amount. 
+
+int id\+Link int slots 
+
+\label{doc-property-members}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_adb32c38f3d56e0cf6fd6953122f2534b}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!bandSelected@{bandSelected}}
+\index{bandSelected@{bandSelected}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{bandSelected}{bandSelected}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_adb32c38f3d56e0cf6fd6953122f2534b} 
+sim\+Net\+Py.\+connection.\+Connection.\+band\+Selected = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+band\+Selected This property changes the selected band, it can be\+: 1) No\+Band 2) C 3) L 4) S 5) E 
+
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_a27f0678958c587dd978d9c2747ee1f9a}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!id@{id}}
+\index{id@{id}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_a27f0678958c587dd978d9c2747ee1f9a} 
+sim\+Net\+Py.\+connection.\+Connection.\+id = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_ac8b2dc4d2e632da48669a456d2b25dc8}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!links@{links}}
+\index{links@{links}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{links}{links}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_ac8b2dc4d2e632da48669a456d2b25dc8} 
+sim\+Net\+Py.\+connection.\+Connection.\+links = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1connection_1_1_connection_ac6570c06ad92eb1ba9f8b42848fc3397}\index{simNetPy.connection.Connection@{simNetPy.connection.Connection}!slots@{slots}}
+\index{slots@{slots}!simNetPy.connection.Connection@{simNetPy.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{slots}{slots}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1connection_1_1_connection_ac6570c06ad92eb1ba9f8b42848fc3397} 
+sim\+Net\+Py.\+connection.\+Connection.\+slots = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/\mbox{\hyperlink{connection_8py}{connection.\+py}}\end{DoxyCompactItemize}

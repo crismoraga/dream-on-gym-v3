@@ -1,0 +1,73 @@
+\doxysection{sim\+Net\+Py.\+filemanager.\+reader\+Json.\+Reader Class Reference}
+\hypertarget{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader}{}\label{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader}\index{simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a44cffdf27dd3b4bffde412e5eb5faff0}{load\+\_\+schema}} (self)
+\begin{DoxyCompactList}\small\item\em Load the JSON schema at the given path as a Python object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a377af4a601a035964f2094d4ba9e2245}{validate\+Json}} (self, json\+Data)
+\begin{DoxyCompactList}\small\item\em Validate the JSON with a JSON Schema. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a39cbdcee4cfdc9874c94ec42b6a9b113}{read\+Network}} (self, str file, nodes, links)
+\begin{DoxyCompactList}\small\item\em Read the file of network and build nodes and links. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a44cffdf27dd3b4bffde412e5eb5faff0}\index{simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}!load\_schema@{load\_schema}}
+\index{load\_schema@{load\_schema}!simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}}
+\doxysubsubsection{\texorpdfstring{load\_schema()}{load\_schema()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a44cffdf27dd3b4bffde412e5eb5faff0} 
+sim\+Net\+Py.\+filemanager.\+reader\+Json.\+Reader.\+load\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Load the JSON schema at the given path as a Python object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+\_\+path} & A filename for a JSON schema.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Python object representation of the schema. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a39cbdcee4cfdc9874c94ec42b6a9b113}\index{simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}!readNetwork@{readNetwork}}
+\index{readNetwork@{readNetwork}!simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}}
+\doxysubsubsection{\texorpdfstring{readNetwork()}{readNetwork()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a39cbdcee4cfdc9874c94ec42b6a9b113} 
+sim\+Net\+Py.\+filemanager.\+reader\+Json.\+Reader.\+read\+Network (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{file}{, }\item[{}]{nodes}{, }\item[{}]{links}{}\end{DoxyParamCaption})}
+
+
+
+Read the file of network and build nodes and links. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Filename and path that have the information of \doxylink{classsim_net_py_1_1network_1_1_network}{Network} (Nodes and Links) \\
+\hline
+{\em nodes} & Free List to add the nodes. \\
+\hline
+{\em links} & Free list to add the links. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a377af4a601a035964f2094d4ba9e2245}\index{simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}!validateJson@{validateJson}}
+\index{validateJson@{validateJson}!simNetPy.filemanager.readerJson.Reader@{simNetPy.filemanager.readerJson.Reader}}
+\doxysubsubsection{\texorpdfstring{validateJson()}{validateJson()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1filemanager_1_1reader_json_1_1_reader_a377af4a601a035964f2094d4ba9e2245} 
+sim\+Net\+Py.\+filemanager.\+reader\+Json.\+Reader.\+validate\+Json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{json\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Validate the JSON with a JSON Schema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Data} & JSON Content how a String. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/filemanager/\mbox{\hyperlink{reader_json_8py}{reader\+Json.\+py}}\end{DoxyCompactItemize}

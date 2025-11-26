@@ -1,0 +1,325 @@
+\doxysection{sim\+Net\+Py.\+network.\+Network Class Reference}
+\hypertarget{classsim_net_py_1_1network_1_1_network}{}\label{classsim_net_py_1_1network_1_1_network}\index{simNetPy.network.Network@{simNetPy.network.Network}}
+
+
+\doxylink{classsim_net_py_1_1network_1_1_network}{Network} This class contains all the nodes and links in the network and their connections, from here you can access every corner of the network.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_ad623e5561a97fb8fdbbc835c15c9649c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str filename)
+\begin{DoxyCompactList}\small\item\em Constructor This creates the network based on a file and initializes the arrays. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a65bf01811f29fd72adf69058a44b5274}{add\+Node}} (self, node)
+\begin{DoxyCompactList}\small\item\em add\+Node Method to add nodes in the network. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_aa2473c42f2fdcb75575b9b625db334f0}{add\+Link}} (self, link)
+\begin{DoxyCompactList}\small\item\em add\+Link Method to add links in the network. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_aa235233c3f2250e7030f2c95fd6c7d9f}{connect}} (self, int src, int link\+Pos, int dst)
+\begin{DoxyCompactList}\small\item\em connect Connect two nodes with a link \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_ab0a95cf54a6422118ea1f3334c44771f}{is\+Connected}} (self, int src, int dst)
+\begin{DoxyCompactList}\small\item\em is\+Connected \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a7d66ef3408afc97e4b9d7029163f5c90}{use\+Slot}} (self, link\+Pos, slot\+From, slot\+To=None, band\+Selected="{}No\+Band"{})
+\begin{DoxyCompactList}\small\item\em use\+Slot Take a free slots from slot\+From to slot\+To into a Band\+Selected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a9acfe4054d4f241e8e35f4d532990035}{unuse\+Slot}} (self, link\+Pos, slot\+From, slot\+To=None, band\+Selected="{}No\+Band"{})
+\begin{DoxyCompactList}\small\item\em unuse\+Slot Take a free slots from slot\+From to slot\+To into a Band\+Selected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a0b1a9b95cc4aca3282730cc889cefaca}{is\+Slot\+Used}} (self, link\+Pos, slot\+Pos)
+\begin{DoxyCompactList}\small\item\em is\+Slot\+Used Indicates whether a certain slot is used or not, on a given link. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a616b9eb24f318d8a83317e39df83bd7f}{validate\+Slot\+From\+To}} (self, link\+Pos, slot\+From, slot\+To)
+\begin{DoxyCompactList}\small\item\em validate\+Slot\+From\+To Validates whether the slots exist within a given link. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_ae6e3c41d84d9b82dd4cf3027693c556a}{get\+Number\+Of\+Nodes}} (self)
+\begin{DoxyCompactList}\small\item\em get\+Number\+Of\+Nodes Get the count of nodes in the network \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_afb4e1dc23c3e1c27ea295ff3ee981b7e}{get\+Number\+Of\+Links}} (self)
+\begin{DoxyCompactList}\small\item\em get\+Number\+Of\+Links Get the count of links in the network \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a35e260f9ce61508ad63dd7fc91f05f59}{get\+Link}} (self, id\+Link)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a3291a1e554e0097bde77d9cc84d66c20}{link\+Counter}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a00c3ef810fdee767c0713cd381165018}{node\+Counter}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_a2af606ac90ea63103a8b1db8f10d7d78}{nodes}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_af09478a7ed7aaf11c4b7c4f23fde5bdc}{links}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_aa8fffdef50dd0692c5b1408404c931d3}{links\+In}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_af30c3d646e999cb1cdf971d5a41ab82d}{links\+Out}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_af57e0a5bf000c31d17273ea54024d8ea}{nodes\+In}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network_afb7d41d3b2451ddb2867aee4e2a353ce}{nodes\+Out}} = property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classsim_net_py_1_1network_1_1_network}{Network} This class contains all the nodes and links in the network and their connections, from here you can access every corner of the network. 
+
+\label{doc-constructors}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_ad623e5561a97fb8fdbbc835c15c9649c}\index{simNetPy.network.Network@{simNetPy.network.Network}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_ad623e5561a97fb8fdbbc835c15c9649c} 
+sim\+Net\+Py.\+network.\+Network.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Constructor This creates the network based on a file and initializes the arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Is a path directory \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_aa2473c42f2fdcb75575b9b625db334f0}\index{simNetPy.network.Network@{simNetPy.network.Network}!addLink@{addLink}}
+\index{addLink@{addLink}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_aa2473c42f2fdcb75575b9b625db334f0} 
+sim\+Net\+Py.\+network.\+Network.\+add\+Link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{link}{}\end{DoxyParamCaption})}
+
+
+
+add\+Link Method to add links in the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link} & Object \doxylink{classsim_net_py_1_1link_1_1_link}{Link} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a65bf01811f29fd72adf69058a44b5274}\index{simNetPy.network.Network@{simNetPy.network.Network}!addNode@{addNode}}
+\index{addNode@{addNode}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a65bf01811f29fd72adf69058a44b5274} 
+sim\+Net\+Py.\+network.\+Network.\+add\+Node (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+
+
+add\+Node Method to add nodes in the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Object node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_aa235233c3f2250e7030f2c95fd6c7d9f}\index{simNetPy.network.Network@{simNetPy.network.Network}!connect@{connect}}
+\index{connect@{connect}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_aa235233c3f2250e7030f2c95fd6c7d9f} 
+sim\+Net\+Py.\+network.\+Network.\+connect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{src}{, }\item[{int}]{link\+Pos}{, }\item[{int}]{dst}{}\end{DoxyParamCaption})}
+
+
+
+connect Connect two nodes with a link 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source ID \\
+\hline
+{\em link\+Pos} & \doxylink{classsim_net_py_1_1link_1_1_link}{Link} ID \\
+\hline
+{\em dst} & Destiny ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a35e260f9ce61508ad63dd7fc91f05f59}\index{simNetPy.network.Network@{simNetPy.network.Network}!getLink@{getLink}}
+\index{getLink@{getLink}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{getLink()}{getLink()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a35e260f9ce61508ad63dd7fc91f05f59} 
+sim\+Net\+Py.\+network.\+Network.\+get\+Link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id\+Link}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_afb4e1dc23c3e1c27ea295ff3ee981b7e}\index{simNetPy.network.Network@{simNetPy.network.Network}!getNumberOfLinks@{getNumberOfLinks}}
+\index{getNumberOfLinks@{getNumberOfLinks}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{getNumberOfLinks()}{getNumberOfLinks()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_afb4e1dc23c3e1c27ea295ff3ee981b7e} 
+sim\+Net\+Py.\+network.\+Network.\+get\+Number\+Of\+Links (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+get\+Number\+Of\+Links Get the count of links in the network 
+
+\begin{DoxyReturn}{Returns}
+Obtain the quantity of links in the network 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_ae6e3c41d84d9b82dd4cf3027693c556a}\index{simNetPy.network.Network@{simNetPy.network.Network}!getNumberOfNodes@{getNumberOfNodes}}
+\index{getNumberOfNodes@{getNumberOfNodes}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{getNumberOfNodes()}{getNumberOfNodes()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_ae6e3c41d84d9b82dd4cf3027693c556a} 
+sim\+Net\+Py.\+network.\+Network.\+get\+Number\+Of\+Nodes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+get\+Number\+Of\+Nodes Get the count of nodes in the network 
+
+\begin{DoxyReturn}{Returns}
+Obtain the quantity of nodes in the network 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_ab0a95cf54a6422118ea1f3334c44771f}\index{simNetPy.network.Network@{simNetPy.network.Network}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_ab0a95cf54a6422118ea1f3334c44771f} 
+sim\+Net\+Py.\+network.\+Network.\+is\+Connected (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{src}{, }\item[{int}]{dst}{}\end{DoxyParamCaption})}
+
+
+
+is\+Connected 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source ID \\
+\hline
+{\em dst} & Destiny ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the source has a connection to destiny. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a0b1a9b95cc4aca3282730cc889cefaca}\index{simNetPy.network.Network@{simNetPy.network.Network}!isSlotUsed@{isSlotUsed}}
+\index{isSlotUsed@{isSlotUsed}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{isSlotUsed()}{isSlotUsed()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a0b1a9b95cc4aca3282730cc889cefaca} 
+sim\+Net\+Py.\+network.\+Network.\+is\+Slot\+Used (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{link\+Pos}{, }\item[{}]{slot\+Pos}{}\end{DoxyParamCaption})}
+
+
+
+is\+Slot\+Used Indicates whether a certain slot is used or not, on a given link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+Pos} & link ID \\
+\hline
+{\em slot\+Pos} & Slot ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if slot is used, false in other case. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a9acfe4054d4f241e8e35f4d532990035}\index{simNetPy.network.Network@{simNetPy.network.Network}!unuseSlot@{unuseSlot}}
+\index{unuseSlot@{unuseSlot}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{unuseSlot()}{unuseSlot()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a9acfe4054d4f241e8e35f4d532990035} 
+sim\+Net\+Py.\+network.\+Network.\+unuse\+Slot (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{link\+Pos}{, }\item[{}]{slot\+From}{, }\item[{}]{slot\+To}{ = {\ttfamily None}, }\item[{}]{band\+Selected}{ = {\ttfamily "{}NoBand"{}}}\end{DoxyParamCaption})}
+
+
+
+unuse\+Slot Take a free slots from slot\+From to slot\+To into a Band\+Selected. 
+
+Change all the values to False
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+Pos} & \doxylink{classsim_net_py_1_1link_1_1_link}{Link} ID \\
+\hline
+{\em slot\+From} & Initial Range Slot required \\
+\hline
+{\em slot\+To} & End Range Slot required \\
+\hline
+{\em band\+Selected} & Band Selected L, C, S, E, O or No\+Band is the default value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a7d66ef3408afc97e4b9d7029163f5c90}\index{simNetPy.network.Network@{simNetPy.network.Network}!useSlot@{useSlot}}
+\index{useSlot@{useSlot}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{useSlot()}{useSlot()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a7d66ef3408afc97e4b9d7029163f5c90} 
+sim\+Net\+Py.\+network.\+Network.\+use\+Slot (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{link\+Pos}{, }\item[{}]{slot\+From}{, }\item[{}]{slot\+To}{ = {\ttfamily None}, }\item[{}]{band\+Selected}{ = {\ttfamily "{}NoBand"{}}}\end{DoxyParamCaption})}
+
+
+
+use\+Slot Take a free slots from slot\+From to slot\+To into a Band\+Selected. 
+
+Change all the values to True
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+Pos} & \doxylink{classsim_net_py_1_1link_1_1_link}{Link} ID \\
+\hline
+{\em slot\+From} & Initial Range Slot required \\
+\hline
+{\em slot\+To} & End Range Slot required \\
+\hline
+{\em band\+Selected} & Band Selected L, C, S, E, O or No\+Band is the default value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a616b9eb24f318d8a83317e39df83bd7f}\index{simNetPy.network.Network@{simNetPy.network.Network}!validateSlotFromTo@{validateSlotFromTo}}
+\index{validateSlotFromTo@{validateSlotFromTo}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{validateSlotFromTo()}{validateSlotFromTo()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a616b9eb24f318d8a83317e39df83bd7f} 
+sim\+Net\+Py.\+network.\+Network.\+validate\+Slot\+From\+To (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{link\+Pos}{, }\item[{}]{slot\+From}{, }\item[{}]{slot\+To}{}\end{DoxyParamCaption})}
+
+
+
+validate\+Slot\+From\+To Validates whether the slots exist within a given link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+Pos} & \doxylink{classsim_net_py_1_1link_1_1_link}{Link} ID \\
+\hline
+{\em slot\+From} & Initial of range of slots \\
+\hline
+{\em slot\+To} & End of range of slots. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a3291a1e554e0097bde77d9cc84d66c20}\index{simNetPy.network.Network@{simNetPy.network.Network}!linkCounter@{linkCounter}}
+\index{linkCounter@{linkCounter}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{linkCounter}{linkCounter}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a3291a1e554e0097bde77d9cc84d66c20} 
+sim\+Net\+Py.\+network.\+Network.\+link\+Counter = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_af09478a7ed7aaf11c4b7c4f23fde5bdc}\index{simNetPy.network.Network@{simNetPy.network.Network}!links@{links}}
+\index{links@{links}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{links}{links}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_af09478a7ed7aaf11c4b7c4f23fde5bdc} 
+sim\+Net\+Py.\+network.\+Network.\+links = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_aa8fffdef50dd0692c5b1408404c931d3}\index{simNetPy.network.Network@{simNetPy.network.Network}!linksIn@{linksIn}}
+\index{linksIn@{linksIn}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{linksIn}{linksIn}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_aa8fffdef50dd0692c5b1408404c931d3} 
+sim\+Net\+Py.\+network.\+Network.\+links\+In = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_af30c3d646e999cb1cdf971d5a41ab82d}\index{simNetPy.network.Network@{simNetPy.network.Network}!linksOut@{linksOut}}
+\index{linksOut@{linksOut}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{linksOut}{linksOut}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_af30c3d646e999cb1cdf971d5a41ab82d} 
+sim\+Net\+Py.\+network.\+Network.\+links\+Out = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a00c3ef810fdee767c0713cd381165018}\index{simNetPy.network.Network@{simNetPy.network.Network}!nodeCounter@{nodeCounter}}
+\index{nodeCounter@{nodeCounter}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{nodeCounter}{nodeCounter}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a00c3ef810fdee767c0713cd381165018} 
+sim\+Net\+Py.\+network.\+Network.\+node\+Counter = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_a2af606ac90ea63103a8b1db8f10d7d78}\index{simNetPy.network.Network@{simNetPy.network.Network}!nodes@{nodes}}
+\index{nodes@{nodes}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_a2af606ac90ea63103a8b1db8f10d7d78} 
+sim\+Net\+Py.\+network.\+Network.\+nodes = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_af57e0a5bf000c31d17273ea54024d8ea}\index{simNetPy.network.Network@{simNetPy.network.Network}!nodesIn@{nodesIn}}
+\index{nodesIn@{nodesIn}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{nodesIn}{nodesIn}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_af57e0a5bf000c31d17273ea54024d8ea} 
+sim\+Net\+Py.\+network.\+Network.\+nodes\+In = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1network_1_1_network_afb7d41d3b2451ddb2867aee4e2a353ce}\index{simNetPy.network.Network@{simNetPy.network.Network}!nodesOut@{nodesOut}}
+\index{nodesOut@{nodesOut}!simNetPy.network.Network@{simNetPy.network.Network}}
+\doxysubsubsection{\texorpdfstring{nodesOut}{nodesOut}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1network_1_1_network_afb7d41d3b2451ddb2867aee4e2a353ce} 
+sim\+Net\+Py.\+network.\+Network.\+nodes\+Out = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/\mbox{\hyperlink{network_8py}{network.\+py}}\end{DoxyCompactItemize}

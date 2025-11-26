@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm","wheel", "cython"]
+[metadata]
+Name = Dream on GYM V2
+Version = 0.0.9
+Summary = Framework to training Agent on Optical Networks Simulator V3
+License = GPL version 3
+Readme = "README.md"
+Requires-python = "3.10"
+[project.urls]
+"Homepage" = https://gitlab.com/IRO-Team/dream-on-gym-v2.0

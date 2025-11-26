@@ -1,0 +1,165 @@
+\doxysection{gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env Class Reference}
+\hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env}{}\label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+
+
+Enviroment for Gymnasium.  
+
+
+Inheritance diagram for gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_adc87f4fe25496fd769675a40b29398d1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a81bdd19255d7f6456ec67316c89afab8}{action\+\_\+space}}=3, \mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a613501379244c01540aa74482bb5e8f2}{observation\+\_\+space}}=3, start\+\_\+training=1000)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_aced1ee45dd7ac93dd24066ddc31309a8}{start}} (self, verbose=False)
+\begin{DoxyCompactList}\small\item\em Start Function Initializes the simulator to the start\+\_\+training stage, then proceeds to the step-\/by-\/step or reset stage. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ad2cd47ba038740c4d2db4e15cec24da1}{step}} (self, action)
+\begin{DoxyCompactList}\small\item\em Step Function Receives the action taken by the agent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a41ad5b308199d0c5d41b80cae3651178}{reset}} (self, seed=None, options=None)
+\begin{DoxyCompactList}\small\item\em Reset Function Function that returns the simulation to the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ae3c8d73100dcd72adf0a4c073be0dd58}{set\+State\+Func}} (self, func)
+\begin{DoxyCompactList}\small\item\em Function State Set the funtion state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a26d2f0d553136d559e18c08ecc2c9332}{set\+Reward\+Func}} (self, func)
+\begin{DoxyCompactList}\small\item\em Function Reward Set the funtion reward. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a62d40f6badc25a499209fb9f9fccbbb8}{init\+Enviroment}} (self, network\+Filename="{}"{}, path\+Filename="{}"{}, bitrate\+Filename="{}"{})
+\begin{DoxyCompactList}\small\item\em Initialization Enviroment Create the Simulator Object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a979a2c270caff410ae2c58f528a9f55f}{get\+Simulator}} (self)
+\begin{DoxyCompactList}\small\item\em Get Simulator Object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a81bdd19255d7f6456ec67316c89afab8}{action\+\_\+space}} = gymnasium.\+spaces.\+Discrete(action\+\_\+space)
+\item 
+\mbox{\hyperlink{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a613501379244c01540aa74482bb5e8f2}{observation\+\_\+space}} = gymnasium.\+spaces.\+Discrete(observation\+\_\+space)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Enviroment for Gymnasium. 
+
+Tool that connects the simulator and the agent in an optical network environment 
+
+\label{doc-constructors}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_adc87f4fe25496fd769675a40b29398d1}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_adc87f4fe25496fd769675a40b29398d1} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{action\+\_\+space}{ = {\ttfamily 3}, }\item[{}]{observation\+\_\+space}{ = {\ttfamily 3}, }\item[{}]{start\+\_\+training}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Action} & 3 \\
+\hline
+{\em Observation} & 3 \\
+\hline
+{\em Start} & 1000 iterations \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a979a2c270caff410ae2c58f528a9f55f}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!getSimulator@{getSimulator}}
+\index{getSimulator@{getSimulator}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{getSimulator()}{getSimulator()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a979a2c270caff410ae2c58f528a9f55f} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+get\+Simulator (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Get Simulator Object. 
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a62d40f6badc25a499209fb9f9fccbbb8}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!initEnviroment@{initEnviroment}}
+\index{initEnviroment@{initEnviroment}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{initEnviroment()}{initEnviroment()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a62d40f6badc25a499209fb9f9fccbbb8} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+init\+Enviroment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{network\+Filename}{ = {\ttfamily "{}"{}}, }\item[{}]{path\+Filename}{ = {\ttfamily "{}"{}}, }\item[{}]{bitrate\+Filename}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+
+
+Initialization Enviroment Create the Simulator Object. 
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a41ad5b308199d0c5d41b80cae3651178}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!reset@{reset}}
+\index{reset@{reset}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a41ad5b308199d0c5d41b80cae3651178} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{ = {\ttfamily None}, }\item[{}]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reset Function Function that returns the simulation to the beginning. 
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a26d2f0d553136d559e18c08ecc2c9332}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!setRewardFunc@{setRewardFunc}}
+\index{setRewardFunc@{setRewardFunc}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{setRewardFunc()}{setRewardFunc()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a26d2f0d553136d559e18c08ecc2c9332} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+set\+Reward\+Func (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{}\end{DoxyParamCaption})}
+
+
+
+Function Reward Set the funtion reward. 
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ae3c8d73100dcd72adf0a4c073be0dd58}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!setStateFunc@{setStateFunc}}
+\index{setStateFunc@{setStateFunc}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{setStateFunc()}{setStateFunc()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ae3c8d73100dcd72adf0a4c073be0dd58} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+set\+State\+Func (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{}\end{DoxyParamCaption})}
+
+
+
+Function State Set the funtion state. 
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_aced1ee45dd7ac93dd24066ddc31309a8}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!start@{start}}
+\index{start@{start}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_aced1ee45dd7ac93dd24066ddc31309a8} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+start (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{verbose}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Start Function Initializes the simulator to the start\+\_\+training stage, then proceeds to the step-\/by-\/step or reset stage. 
+
+This action allows you to prepare the environment for agent interaction if the start\+\_\+training stage is high. \Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ad2cd47ba038740c4d2db4e15cec24da1}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!step@{step}}
+\index{step@{step}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_ad2cd47ba038740c4d2db4e15cec24da1} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+step (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{action}{}\end{DoxyParamCaption})}
+
+
+
+Step Function Receives the action taken by the agent. 
+
+The function takes the value sent according to the programmed function. The simulator assigns or deems it appropriate based on the decision, and a benefit is obtained based on this. 
+
+\label{doc-variable-members}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a81bdd19255d7f6456ec67316c89afab8}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!action\_space@{action\_space}}
+\index{action\_space@{action\_space}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{action\_space}{action\_space}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a81bdd19255d7f6456ec67316c89afab8} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+action\+\_\+space = gymnasium.\+spaces.\+Discrete(action\+\_\+space)}
+
+\Hypertarget{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a613501379244c01540aa74482bb5e8f2}\index{gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}!observation\_space@{observation\_space}}
+\index{observation\_space@{observation\_space}!gym\_basic.envs.rl\_on\_env.RlOnEnv@{gym\_basic.envs.rl\_on\_env.RlOnEnv}}
+\doxysubsubsection{\texorpdfstring{observation\_space}{observation\_space}}
+{\footnotesize\ttfamily \label{classgym__basic_1_1envs_1_1rl__on__env_1_1_rl_on_env_a613501379244c01540aa74482bb5e8f2} 
+gym\+\_\+basic.\+envs.\+rl\+\_\+on\+\_\+env.\+Rl\+On\+Env.\+observation\+\_\+space = gymnasium.\+spaces.\+Discrete(observation\+\_\+space)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gym\+\_\+basic/envs/\mbox{\hyperlink{rl__on__env_8py}{rl\+\_\+on\+\_\+env.\+py}}\end{DoxyCompactItemize}

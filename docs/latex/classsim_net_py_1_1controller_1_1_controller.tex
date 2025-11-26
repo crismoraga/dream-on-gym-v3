@@ -1,0 +1,197 @@
+\doxysection{sim\+Net\+Py.\+controller.\+Controller Class Reference}
+\hypertarget{classsim_net_py_1_1controller_1_1_controller}{}\label{classsim_net_py_1_1controller_1_1_controller}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+
+
+modify access to private variables of Connections \& \doxylink{classsim_net_py_1_1network_1_1_network}{Network} classes  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a9429d67f7df549e9b90e4c022cb3fc75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsim_net_py_1_1network_1_1_network}{Network}} \mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a45150211a5529981830fe4ee3e841d06}{network}}=None)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_adbc1f24e4caa68e07f226ac3546eb683}{assign\+Connection}} (self, src, dst, bit\+Rate, int id\+Connection, action=None)
+\begin{DoxyCompactList}\small\item\em assign\+Connection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_aff755d64b20f81c58ac19470478bc252}{unassign\+Connection}} (self, id\+Connection)
+\begin{DoxyCompactList}\small\item\em unassign\+Connection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a4e558fdd49c53dffe52c02cc5b00e6a0}{set\+Paths}} (self, filename)
+\begin{DoxyCompactList}\small\item\em set\+Paths \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a782b1fcc424ca4ff390520fdfee4bda7}{get\+Connection}} (self, id\+Connection)
+\begin{DoxyCompactList}\small\item\em get\+Connection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a8685f5bb4d26599b4892ad0a8d2969f3}{Status}} = enum.\+Enum(\textquotesingle{}Status\textquotesingle{},\textquotesingle{}Allocated Not\+\_\+\+Allocated N\+\_\+A\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_aa86fb861654cfa2c484639418406d9e3}{connections}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a16b2592780362f540bc2bf2b109df776}{allocator}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a45150211a5529981830fe4ee3e841d06}{network}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1controller_1_1_controller_a22e1ee5c0110676f7f3e05237b72a2d1}{path}} = property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+modify access to private variables of Connections \& \doxylink{classsim_net_py_1_1network_1_1_network}{Network} classes 
+
+\doxylink{classsim_net_py_1_1controller_1_1_controller}{Controller}
+
+Object that is tasked with controlling the allocation and deallocation of connection slots. 
+
+\label{doc-constructors}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a9429d67f7df549e9b90e4c022cb3fc75}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a9429d67f7df549e9b90e4c022cb3fc75} 
+sim\+Net\+Py.\+controller.\+Controller.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classsim_net_py_1_1network_1_1_network}{Network}} }]{network}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em network} & \doxylink{classsim_net_py_1_1network_1_1_network}{Network} Object Default values\+: \\
+\hline
+{\em Source} & None \\
+\hline
+{\em Destination} & None \\
+\hline
+{\em \doxylink{classsim_net_py_1_1bit_rate_1_1_bit_rate}{Bit\+Rate}} & None \\
+\hline
+{\em Id\+Connection} & None \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_adbc1f24e4caa68e07f226ac3546eb683}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!assignConnection@{assignConnection}}
+\index{assignConnection@{assignConnection}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{assignConnection()}{assignConnection()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_adbc1f24e4caa68e07f226ac3546eb683} 
+sim\+Net\+Py.\+controller.\+Controller.\+assign\+Connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{src}{, }\item[{}]{dst}{, }\item[{}]{bit\+Rate}{, }\item[{int}]{id\+Connection}{, }\item[{}]{action}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+assign\+Connection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source User \\
+\hline
+{\em dst} & Destination User \\
+\hline
+{\em \doxylink{namespacesim_net_py_1_1bit_rate}{bit\+Rate}} & Bit Rate \\
+\hline
+{\em id\+Connection} & ID \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} \\
+\hline
+{\em action} & The agent\textquotesingle{}s decision value can be of various types. For example\+: an integer, a float, an array of values, etc. \begin{DoxyVerb}   According to what the allocator algorithm delivered, the slots requested in the connection are assigned on all links.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a782b1fcc424ca4ff390520fdfee4bda7}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a782b1fcc424ca4ff390520fdfee4bda7} 
+sim\+Net\+Py.\+controller.\+Controller.\+get\+Connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id\+Connection}{}\end{DoxyParamCaption})}
+
+
+
+get\+Connection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Connection} & Integer ID of \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} \begin{DoxyVerb}   Return the Object Connection
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a4e558fdd49c53dffe52c02cc5b00e6a0}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!setPaths@{setPaths}}
+\index{setPaths@{setPaths}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{setPaths()}{setPaths()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a4e558fdd49c53dffe52c02cc5b00e6a0} 
+sim\+Net\+Py.\+controller.\+Controller.\+set\+Paths (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+set\+Paths 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path URL to read the route of the network \begin{DoxyVerb}   This method reads the routes file of a network.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_aff755d64b20f81c58ac19470478bc252}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!unassignConnection@{unassignConnection}}
+\index{unassignConnection@{unassignConnection}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{unassignConnection()}{unassignConnection()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_aff755d64b20f81c58ac19470478bc252} 
+sim\+Net\+Py.\+controller.\+Controller.\+unassign\+Connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{id\+Connection}{}\end{DoxyParamCaption})}
+
+
+
+unassign\+Connection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Connection} & ID \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} \begin{DoxyVerb}       According to what the allocator algorithm delivered, the slots requested in the connection are unassigned on all links.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a8685f5bb4d26599b4892ad0a8d2969f3}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!Status@{Status}}
+\index{Status@{Status}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a8685f5bb4d26599b4892ad0a8d2969f3} 
+sim\+Net\+Py.\+controller.\+Controller.\+Status = enum.\+Enum(\textquotesingle{}Status\textquotesingle{},\textquotesingle{}Allocated Not\+\_\+\+Allocated N\+\_\+A\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-property-members}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a16b2592780362f540bc2bf2b109df776}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!allocator@{allocator}}
+\index{allocator@{allocator}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a16b2592780362f540bc2bf2b109df776} 
+sim\+Net\+Py.\+controller.\+Controller.\+allocator = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_aa86fb861654cfa2c484639418406d9e3}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!connections@{connections}}
+\index{connections@{connections}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{connections}{connections}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_aa86fb861654cfa2c484639418406d9e3} 
+sim\+Net\+Py.\+controller.\+Controller.\+connections = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a45150211a5529981830fe4ee3e841d06}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!network@{network}}
+\index{network@{network}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{network}{network}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a45150211a5529981830fe4ee3e841d06} 
+sim\+Net\+Py.\+controller.\+Controller.\+network = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1controller_1_1_controller_a22e1ee5c0110676f7f3e05237b72a2d1}\index{simNetPy.controller.Controller@{simNetPy.controller.Controller}!path@{path}}
+\index{path@{path}!simNetPy.controller.Controller@{simNetPy.controller.Controller}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1controller_1_1_controller_a22e1ee5c0110676f7f3e05237b72a2d1} 
+sim\+Net\+Py.\+controller.\+Controller.\+path = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/\mbox{\hyperlink{controller_8py}{controller.\+py}}\end{DoxyCompactItemize}

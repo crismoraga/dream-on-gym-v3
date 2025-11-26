@@ -1,0 +1,761 @@
+\doxysection{sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator Class Reference}
+\hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator}{}\label{classsim_net_py_1_1simulator__finite_1_1_simulator}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+
+
+\doxylink{classsim_net_py_1_1simulator__finite_1_1_simulator}{Simulator} Module that is responsible for maintaining and simulating network connections.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a548c5a194f2167f4f6baae208c89caef}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, network\+File="{}"{}, path\+Filename="{}"{}, bitrate\+Filename="{}"{})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a706fa56026c7e59671e383161074369f}{set\+Lambda}} (self, lambda\+Value)
+\begin{DoxyCompactList}\small\item\em Set Lambda Value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a1dd36055c1d689fcec36f3530ed229d3}{set\+Mu}} (self, mu)
+\begin{DoxyCompactList}\small\item\em Set Mu Value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a555bfd9d113f55b2068f3f3994ec5bdf}{set\+Rho}} (self, rho)
+\begin{DoxyCompactList}\small\item\em Set Rho Value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a3905b1c0b9cb8ba7ca4b4abdc29e22a0}{set\+Seed\+Arrive}} (self, seed)
+\begin{DoxyCompactList}\small\item\em Set Seed Arrive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a29c8c89e2dc6417085cce2e99a64b811}{set\+Seed\+Departure}} (self, seed)
+\begin{DoxyCompactList}\small\item\em Set Seed Departure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_add82cf51c8d031b2a3aaa62e25becbab}{set\+Seed\+Bit\+Rate}} (self, seed)
+\begin{DoxyCompactList}\small\item\em Set Seed Bitrate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ad5bcdd3604d0361669f969900b8829e5}{set\+Seed\+Src}} (self, seed)
+\begin{DoxyCompactList}\small\item\em Set Seed Source. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a12093b98adb0509b798c0afb2020d6c8}{set\+Seed\+Dst}} (self, seed)
+\begin{DoxyCompactList}\small\item\em Set Seed Destination. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a7aa0e440cddce5e54e86e455493a81ff}{set\+Goal\+Connections}} (self, goal)
+\begin{DoxyCompactList}\small\item\em Goal Connections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a47f3bf51864f0c69d411df8c438c3616}{set\+Bit\+Rates}} (self, \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a4130be15c9e2cf6b5b5b2b4b77980625}{bit\+Rates}})
+\begin{DoxyCompactList}\small\item\em Set Bit Rates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_afe3f7cea02cd04c863aaef24ef1d7ddf}{set\+Allocator}} (self, algorithm)
+\begin{DoxyCompactList}\small\item\em Set Allocator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_af00e2166cef4d0b651b0c5ebf5220dea}{set\+Confidence}} (self, c)
+\begin{DoxyCompactList}\small\item\em Set Confidence. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_aa4ec83f6124e24b9a19d9c60ee210a6c}{print\+Initial\+Info}} (self)
+\begin{DoxyCompactList}\small\item\em Print Initial Information Print statistics of Simulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_aff6f86f10bfc3b1f144ebeb97997c095}{print\+Row}} (self, percentage)
+\begin{DoxyCompactList}\small\item\em Print Row. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ae7f7acb89c1da5ad4bb40bacb6d48454}{add\+Event}} (self)
+\begin{DoxyCompactList}\small\item\em Add \doxylink{classsim_net_py_1_1event_1_1_event}{Event} Method to Add the \doxylink{classsim_net_py_1_1event_1_1_event}{Event} (The Events are Finite) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_abfc284cc3afec35f971f0dbbcec241b3}{create\+Event\+Connection}} (self)
+\begin{DoxyCompactList}\small\item\em Create \doxylink{classsim_net_py_1_1event_1_1_event}{Event} \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} Create a new event with new random values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a10d67a8ce812f62e3dce246dfb86ba12}{print\+All\+Links}} (self)
+\begin{DoxyCompactList}\small\item\em Print All Links Print the array of slots capacity of all links. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ae54d34857278799bb3139f74e8c98415}{event\+Routine}} (self, action)
+\begin{DoxyCompactList}\small\item\em \doxylink{classsim_net_py_1_1event_1_1_event}{Event} Routine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_adc0aa44c1a3698ea5c6a47986ea5b336}{init}} (self)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ac8dc3234cea7418b39feb9073e0efb05}{run}} (self, verbose=False)
+\begin{DoxyCompactList}\small\item\em Run. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a76e238ab2ef34489404c1cba6a7d5308}{forward\+Departures}} (self)
+\begin{DoxyCompactList}\small\item\em Forward Departures Move to the next departure event, without action. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_adc39c843fc9c6b32c4333cec7bdda4f3}{step}} (self, action)
+\begin{DoxyCompactList}\small\item\em Step. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a01e920d987c4dc9601eb84f643691e04}{get\+Time\+Duration}} (self)
+\begin{DoxyCompactList}\small\item\em Get Time Duration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a9b4521cab92f886838730fc98205563e}{get\+Blocking\+Probability}} (self)
+\begin{DoxyCompactList}\small\item\em Get Blocking Probability. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_afe7e7f6a5a1b8b34953b5e4053cc151e}{get\+Allocated\+Probability}} (self)
+\begin{DoxyCompactList}\small\item\em Get Allocated Probability. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_af4483815a7cd6ea4abd32d0cba6a65aa}{wald\+CI}} (self)
+\begin{DoxyCompactList}\small\item\em Wald CI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a13a62f14a1882fd65794b151f0d6d94c}{agresti\+CI}} (self)
+\begin{DoxyCompactList}\small\item\em Agresti CI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ae3461e0561bccbedd3b04e9a2bb84118}{wilson\+CI}} (self)
+\begin{DoxyCompactList}\small\item\em Wilson CI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ae46f66cb22273558b744537639835b63}{init\+ZScore}} (self)
+\begin{DoxyCompactList}\small\item\em Init Z Score Initialize Statistics values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_aaf6fe9a0464269fb6c8fe1f9a34c1a7a}{default\+Values}} (self)
+\begin{DoxyCompactList}\small\item\em Default Values This method set Initial Values, is possible create your own Initial Values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a0cfa166465fb50b9bfc82ac56c5e463d}{last\+Connection\+Is\+Allocated}} (self)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a4b82dc7715a2df1fa7e6e9c97c6e406e}{set\+Agent\+Action}} (self, action)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a8e049ffe95528171f7c651d55cbbb4d6}{Truncated\+Func}} (self)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a86c69cb70f49f5af96e340946343224d}{get\+Truncated\+Func}} (self)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_aefcb0a7020c85ac2a70c4557260fc914}{set\+Truncated\+Func}} (self, truncated\+Func)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a5ed09a2854f9690abf3b82a0f880456c}{terminated\+Func}} (self)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ae651db88ea8e882fc27f736049090b1e}{get\+Terminated\+Func}} (self)
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ab377e36ade1f49c3620543e59ddc6af6}{set\+Terminated\+Func}} (self, \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a5ed09a2854f9690abf3b82a0f880456c}{terminated\+Func}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_ac7adad1f81964d343909394fa88d8d9d}{epsilon}} = 1e-\/2
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a154b784625ad055987e7d82c883a6318}{meta}} = math.\+fabs(objetive -\/ \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a85c726d1fd8e919667a5a21abbc435d9}{covered}})
+\item 
+tuple \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a85c726d1fd8e919667a5a21abbc435d9}{covered}}
+\item 
+tuple \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a1c2bd7814a3aa28280985d7861014b0e}{convered}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a1543891a808d7ad5bfbcee27d77e9bf1}{events}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a056b7bfcdfec293f659e7878f365178a}{src\+Variable}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a38469b2a5cc50e587a0881674085dac9}{dst\+Variable}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a2dda46ab30edfef566033ed28d7380bb}{bit\+Rate\+Variable}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a889a82301076debd38805239dde6383d}{controller}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a4130be15c9e2cf6b5b5b2b4b77980625}{bit\+Rates}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a935a7dd4c90c964120d6cab04e159d2a}{confidence}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a0f35526e13e1678b52e88e3dba1bf2db}{z\+Score}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_acef69c251e4b5d405a096de71938889a}{goal\+Connections}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a008567e5e52c340d6728134049716e9a}{number\+Of\+Events}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_abfa3082c7ea2f4d8cf81e7352dc900fd}{number\+Of\+Connections}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a31a3af5f45238bc571c7df0eb054e154}{connection\+Event}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a48f538996b135ae3173b414e515fc137}{allocated\+Connections}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a42c4245a8d2e6bbc4bf770030170289f}{bit\+Rates\+Default}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a25e14ad56232d7000738864bbc4314ca}{blocking\+Probability}} = property
+\item 
+\mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a25aed01063c678ba0b54a5112a5a94f1}{column\+Width}} = property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classsim_net_py_1_1simulator__finite_1_1_simulator}{Simulator} Module that is responsible for maintaining and simulating network connections. 
+
+\label{doc-constructors}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a548c5a194f2167f4f6baae208c89caef}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a548c5a194f2167f4f6baae208c89caef} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{network\+File}{ = {\ttfamily "{}"{}}, }\item[{}]{path\+Filename}{ = {\ttfamily "{}"{}}, }\item[{}]{bitrate\+Filename}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em network\+File} & Filename and path for the network file. \\
+\hline
+{\em path\+Filename} & Filename and path for the routes file. \\
+\hline
+{\em bibrate\+Filename} & Filename and path for the bitrate file. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ae7f7acb89c1da5ad4bb40bacb6d48454}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{addEvent()}{addEvent()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ae7f7acb89c1da5ad4bb40bacb6d48454} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+add\+Event (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Add \doxylink{classsim_net_py_1_1event_1_1_event}{Event} Method to Add the \doxylink{classsim_net_py_1_1event_1_1_event}{Event} (The Events are Finite) 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a13a62f14a1882fd65794b151f0d6d94c}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!agrestiCI@{agrestiCI}}
+\index{agrestiCI@{agrestiCI}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{agrestiCI()}{agrestiCI()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a13a62f14a1882fd65794b151f0d6d94c} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+agresti\+CI (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Agresti CI. 
+
+\begin{DoxyReturn}{Returns}
+Agresti CI 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_abfc284cc3afec35f971f0dbbcec241b3}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!createEventConnection@{createEventConnection}}
+\index{createEventConnection@{createEventConnection}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{createEventConnection()}{createEventConnection()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_abfc284cc3afec35f971f0dbbcec241b3} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+create\+Event\+Connection (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Create \doxylink{classsim_net_py_1_1event_1_1_event}{Event} \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection} Create a new event with new random values. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_aaf6fe9a0464269fb6c8fe1f9a34c1a7a}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!defaultValues@{defaultValues}}
+\index{defaultValues@{defaultValues}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{defaultValues()}{defaultValues()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_aaf6fe9a0464269fb6c8fe1f9a34c1a7a} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+default\+Values (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Default Values This method set Initial Values, is possible create your own Initial Values. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ae54d34857278799bb3139f74e8c98415}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!eventRoutine@{eventRoutine}}
+\index{eventRoutine@{eventRoutine}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{eventRoutine()}{eventRoutine()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ae54d34857278799bb3139f74e8c98415} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+event\+Routine (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{action}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{classsim_net_py_1_1event_1_1_event}{Event} Routine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action is the decision of the Agent, is a free Object or Value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a76e238ab2ef34489404c1cba6a7d5308}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!forwardDepartures@{forwardDepartures}}
+\index{forwardDepartures@{forwardDepartures}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{forwardDepartures()}{forwardDepartures()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a76e238ab2ef34489404c1cba6a7d5308} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+forward\+Departures (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Forward Departures Move to the next departure event, without action. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_afe7e7f6a5a1b8b34953b5e4053cc151e}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!getAllocatedProbability@{getAllocatedProbability}}
+\index{getAllocatedProbability@{getAllocatedProbability}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{getAllocatedProbability()}{getAllocatedProbability()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_afe7e7f6a5a1b8b34953b5e4053cc151e} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+get\+Allocated\+Probability (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Get Allocated Probability. 
+
+\begin{DoxyReturn}{Returns}
+Get Allocated Probability 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a9b4521cab92f886838730fc98205563e}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!getBlockingProbability@{getBlockingProbability}}
+\index{getBlockingProbability@{getBlockingProbability}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{getBlockingProbability()}{getBlockingProbability()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a9b4521cab92f886838730fc98205563e} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+get\+Blocking\+Probability (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Get Blocking Probability. 
+
+\begin{DoxyReturn}{Returns}
+Percent that can\textquotesingle{}t allocated \doxylink{classsim_net_py_1_1connection_1_1_connection}{Connection}. 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ae651db88ea8e882fc27f736049090b1e}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!getTerminatedFunc@{getTerminatedFunc}}
+\index{getTerminatedFunc@{getTerminatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{getTerminatedFunc()}{getTerminatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ae651db88ea8e882fc27f736049090b1e} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+get\+Terminated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a01e920d987c4dc9601eb84f643691e04}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!getTimeDuration@{getTimeDuration}}
+\index{getTimeDuration@{getTimeDuration}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{getTimeDuration()}{getTimeDuration()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a01e920d987c4dc9601eb84f643691e04} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+get\+Time\+Duration (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Get Time Duration. 
+
+\begin{DoxyReturn}{Returns}
+Elapsed time 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a86c69cb70f49f5af96e340946343224d}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!getTruncatedFunc@{getTruncatedFunc}}
+\index{getTruncatedFunc@{getTruncatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{getTruncatedFunc()}{getTruncatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a86c69cb70f49f5af96e340946343224d} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+get\+Truncated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_adc0aa44c1a3698ea5c6a47986ea5b336}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!init@{init}}
+\index{init@{init}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_adc0aa44c1a3698ea5c6a47986ea5b336} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+init (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ae46f66cb22273558b744537639835b63}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!initZScore@{initZScore}}
+\index{initZScore@{initZScore}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{initZScore()}{initZScore()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ae46f66cb22273558b744537639835b63} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+init\+ZScore (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Init Z Score Initialize Statistics values. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a0cfa166465fb50b9bfc82ac56c5e463d}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!lastConnectionIsAllocated@{lastConnectionIsAllocated}}
+\index{lastConnectionIsAllocated@{lastConnectionIsAllocated}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{lastConnectionIsAllocated()}{lastConnectionIsAllocated()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a0cfa166465fb50b9bfc82ac56c5e463d} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+last\+Connection\+Is\+Allocated (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a10d67a8ce812f62e3dce246dfb86ba12}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!printAllLinks@{printAllLinks}}
+\index{printAllLinks@{printAllLinks}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{printAllLinks()}{printAllLinks()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a10d67a8ce812f62e3dce246dfb86ba12} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+print\+All\+Links (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Print All Links Print the array of slots capacity of all links. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_aa4ec83f6124e24b9a19d9c60ee210a6c}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!printInitialInfo@{printInitialInfo}}
+\index{printInitialInfo@{printInitialInfo}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{printInitialInfo()}{printInitialInfo()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_aa4ec83f6124e24b9a19d9c60ee210a6c} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+print\+Initial\+Info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Print Initial Information Print statistics of Simulation. 
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_aff6f86f10bfc3b1f144ebeb97997c095}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!printRow@{printRow}}
+\index{printRow@{printRow}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{printRow()}{printRow()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_aff6f86f10bfc3b1f144ebeb97997c095} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+print\+Row (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{percentage}{}\end{DoxyParamCaption})}
+
+
+
+Print Row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em percentaje} & Percent of Simulation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ac8dc3234cea7418b39feb9073e0efb05}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!run@{run}}
+\index{run@{run}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ac8dc3234cea7418b39feb9073e0efb05} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{verbose}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Run. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbose} & Print information of Simulation or not. \begin{DoxyVerb}       Start the process the training of Agent with the enviroment
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a4b82dc7715a2df1fa7e6e9c97c6e406e}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setAgentAction@{setAgentAction}}
+\index{setAgentAction@{setAgentAction}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setAgentAction()}{setAgentAction()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a4b82dc7715a2df1fa7e6e9c97c6e406e} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Agent\+Action (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{action}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_afe3f7cea02cd04c863aaef24ef1d7ddf}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setAllocator@{setAllocator}}
+\index{setAllocator@{setAllocator}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setAllocator()}{setAllocator()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_afe3f7cea02cd04c863aaef24ef1d7ddf} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Allocator (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{algorithm}{}\end{DoxyParamCaption})}
+
+
+
+Set Allocator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & Allocator Algorithm Function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a47f3bf51864f0c69d411df8c438c3616}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setBitRates@{setBitRates}}
+\index{setBitRates@{setBitRates}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setBitRates()}{setBitRates()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a47f3bf51864f0c69d411df8c438c3616} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Bit\+Rates (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bit\+Rates}{}\end{DoxyParamCaption})}
+
+
+
+Set Bit Rates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Rates} & Set Value of Bit Rates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_af00e2166cef4d0b651b0c5ebf5220dea}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setConfidence@{setConfidence}}
+\index{setConfidence@{setConfidence}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setConfidence()}{setConfidence()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_af00e2166cef4d0b651b0c5ebf5220dea} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Confidence (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Set Confidence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Intervale of Confidence. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a7aa0e440cddce5e54e86e455493a81ff}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setGoalConnections@{setGoalConnections}}
+\index{setGoalConnections@{setGoalConnections}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setGoalConnections()}{setGoalConnections()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a7aa0e440cddce5e54e86e455493a81ff} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Goal\+Connections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{goal}{}\end{DoxyParamCaption})}
+
+
+
+Goal Connections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal} & Limit or Goal connection in the simulation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a706fa56026c7e59671e383161074369f}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setLambda@{setLambda}}
+\index{setLambda@{setLambda}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setLambda()}{setLambda()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a706fa56026c7e59671e383161074369f} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Lambda (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lambda\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Set Lambda Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda\+Value} & Lambda Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a1dd36055c1d689fcec36f3530ed229d3}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setMu@{setMu}}
+\index{setMu@{setMu}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setMu()}{setMu()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a1dd36055c1d689fcec36f3530ed229d3} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Mu (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mu}{}\end{DoxyParamCaption})}
+
+
+
+Set Mu Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mu} & Mu Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a555bfd9d113f55b2068f3f3994ec5bdf}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setRho@{setRho}}
+\index{setRho@{setRho}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setRho()}{setRho()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a555bfd9d113f55b2068f3f3994ec5bdf} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Rho (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{rho}{}\end{DoxyParamCaption})}
+
+
+
+Set Rho Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rho} & Between 0 to 1 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a3905b1c0b9cb8ba7ca4b4abdc29e22a0}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setSeedArrive@{setSeedArrive}}
+\index{setSeedArrive@{setSeedArrive}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setSeedArrive()}{setSeedArrive()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a3905b1c0b9cb8ba7ca4b4abdc29e22a0} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Seed\+Arrive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Set Seed Arrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed Arrive Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_add82cf51c8d031b2a3aaa62e25becbab}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setSeedBitRate@{setSeedBitRate}}
+\index{setSeedBitRate@{setSeedBitRate}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setSeedBitRate()}{setSeedBitRate()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_add82cf51c8d031b2a3aaa62e25becbab} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Seed\+Bit\+Rate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Set Seed Bitrate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed \doxylink{classsim_net_py_1_1bit_rate_1_1_bit_rate}{Bit\+Rate} Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a29c8c89e2dc6417085cce2e99a64b811}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setSeedDeparture@{setSeedDeparture}}
+\index{setSeedDeparture@{setSeedDeparture}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setSeedDeparture()}{setSeedDeparture()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a29c8c89e2dc6417085cce2e99a64b811} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Seed\+Departure (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Set Seed Departure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed Departure Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a12093b98adb0509b798c0afb2020d6c8}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setSeedDst@{setSeedDst}}
+\index{setSeedDst@{setSeedDst}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setSeedDst()}{setSeedDst()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a12093b98adb0509b798c0afb2020d6c8} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Seed\+Dst (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Set Seed Destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed Destination Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ad5bcdd3604d0361669f969900b8829e5}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setSeedSrc@{setSeedSrc}}
+\index{setSeedSrc@{setSeedSrc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setSeedSrc()}{setSeedSrc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ad5bcdd3604d0361669f969900b8829e5} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Seed\+Src (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Set Seed Source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed Source Value of Simulation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ab377e36ade1f49c3620543e59ddc6af6}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setTerminatedFunc@{setTerminatedFunc}}
+\index{setTerminatedFunc@{setTerminatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setTerminatedFunc()}{setTerminatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ab377e36ade1f49c3620543e59ddc6af6} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Terminated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{terminated\+Func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_aefcb0a7020c85ac2a70c4557260fc914}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!setTruncatedFunc@{setTruncatedFunc}}
+\index{setTruncatedFunc@{setTruncatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{setTruncatedFunc()}{setTruncatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_aefcb0a7020c85ac2a70c4557260fc914} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+set\+Truncated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{truncated\+Func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_adc39c843fc9c6b32c4333cec7bdda4f3}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!step@{step}}
+\index{step@{step}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_adc39c843fc9c6b32c4333cec7bdda4f3} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+step (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{action}{}\end{DoxyParamCaption})}
+
+
+
+Step. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Decision of Agent. Move to the next Arrive event, with action. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a5ed09a2854f9690abf3b82a0f880456c}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!terminatedFunc@{terminatedFunc}}
+\index{terminatedFunc@{terminatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{terminatedFunc()}{terminatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a5ed09a2854f9690abf3b82a0f880456c} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+terminated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a8e049ffe95528171f7c651d55cbbb4d6}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!TruncatedFunc@{TruncatedFunc}}
+\index{TruncatedFunc@{TruncatedFunc}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{TruncatedFunc()}{TruncatedFunc()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a8e049ffe95528171f7c651d55cbbb4d6} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+Truncated\+Func (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_af4483815a7cd6ea4abd32d0cba6a65aa}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!waldCI@{waldCI}}
+\index{waldCI@{waldCI}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{waldCI()}{waldCI()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_af4483815a7cd6ea4abd32d0cba6a65aa} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+wald\+CI (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Wald CI. 
+
+\begin{DoxyReturn}{Returns}
+Wald CI 
+\end{DoxyReturn}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ae3461e0561bccbedd3b04e9a2bb84118}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!wilsonCI@{wilsonCI}}
+\index{wilsonCI@{wilsonCI}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{wilsonCI()}{wilsonCI()}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ae3461e0561bccbedd3b04e9a2bb84118} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+wilson\+CI (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Wilson CI. 
+
+\begin{DoxyReturn}{Returns}
+Wilson CI 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a1c2bd7814a3aa28280985d7861014b0e}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!convered@{convered}}
+\index{convered@{convered}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{convered}{convered}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a1c2bd7814a3aa28280985d7861014b0e} 
+tuple sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+convered\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ((1\ +\ math.erf(actual\ /\ math.sqrt(2)))\ -\/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (1\ +\ math.erf(-\/actual\ /\ math.sqrt(2))))\ /\ 2}
+
+\end{DoxyCode}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a85c726d1fd8e919667a5a21abbc435d9}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!covered@{covered}}
+\index{covered@{covered}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{covered}{covered}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a85c726d1fd8e919667a5a21abbc435d9} 
+tuple sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+covered\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ((1\ +\ math.erf(actual\ /\ math.sqrt(2)))\ -\/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (1\ +\ math.erf(-\/actual\ /\ math.sqrt(2))))\ /\ 2}
+
+\end{DoxyCode}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_ac7adad1f81964d343909394fa88d8d9d}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_ac7adad1f81964d343909394fa88d8d9d} 
+int sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+epsilon = 1e-\/2\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a154b784625ad055987e7d82c883a6318}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!meta@{meta}}
+\index{meta@{meta}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a154b784625ad055987e7d82c883a6318} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+meta = math.\+fabs(objetive -\/ \mbox{\hyperlink{classsim_net_py_1_1simulator__finite_1_1_simulator_a85c726d1fd8e919667a5a21abbc435d9}{covered}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-property-members}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a48f538996b135ae3173b414e515fc137}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!allocatedConnections@{allocatedConnections}}
+\index{allocatedConnections@{allocatedConnections}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{allocatedConnections}{allocatedConnections}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a48f538996b135ae3173b414e515fc137} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+allocated\+Connections = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a4130be15c9e2cf6b5b5b2b4b77980625}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!bitRates@{bitRates}}
+\index{bitRates@{bitRates}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{bitRates}{bitRates}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a4130be15c9e2cf6b5b5b2b4b77980625} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+bit\+Rates = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a42c4245a8d2e6bbc4bf770030170289f}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!bitRatesDefault@{bitRatesDefault}}
+\index{bitRatesDefault@{bitRatesDefault}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{bitRatesDefault}{bitRatesDefault}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a42c4245a8d2e6bbc4bf770030170289f} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+bit\+Rates\+Default = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a2dda46ab30edfef566033ed28d7380bb}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!bitRateVariable@{bitRateVariable}}
+\index{bitRateVariable@{bitRateVariable}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{bitRateVariable}{bitRateVariable}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a2dda46ab30edfef566033ed28d7380bb} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+bit\+Rate\+Variable = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a25e14ad56232d7000738864bbc4314ca}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!blockingProbability@{blockingProbability}}
+\index{blockingProbability@{blockingProbability}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{blockingProbability}{blockingProbability}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a25e14ad56232d7000738864bbc4314ca} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+blocking\+Probability = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a25aed01063c678ba0b54a5112a5a94f1}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!columnWidth@{columnWidth}}
+\index{columnWidth@{columnWidth}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{columnWidth}{columnWidth}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a25aed01063c678ba0b54a5112a5a94f1} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+column\+Width = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a935a7dd4c90c964120d6cab04e159d2a}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!confidence@{confidence}}
+\index{confidence@{confidence}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{confidence}{confidence}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a935a7dd4c90c964120d6cab04e159d2a} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+confidence = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a31a3af5f45238bc571c7df0eb054e154}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!connectionEvent@{connectionEvent}}
+\index{connectionEvent@{connectionEvent}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{connectionEvent}{connectionEvent}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a31a3af5f45238bc571c7df0eb054e154} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+connection\+Event = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a889a82301076debd38805239dde6383d}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!controller@{controller}}
+\index{controller@{controller}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a889a82301076debd38805239dde6383d} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+controller = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a38469b2a5cc50e587a0881674085dac9}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!dstVariable@{dstVariable}}
+\index{dstVariable@{dstVariable}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{dstVariable}{dstVariable}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a38469b2a5cc50e587a0881674085dac9} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+dst\+Variable = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a1543891a808d7ad5bfbcee27d77e9bf1}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!events@{events}}
+\index{events@{events}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a1543891a808d7ad5bfbcee27d77e9bf1} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+events = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_acef69c251e4b5d405a096de71938889a}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!goalConnections@{goalConnections}}
+\index{goalConnections@{goalConnections}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{goalConnections}{goalConnections}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_acef69c251e4b5d405a096de71938889a} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+goal\+Connections = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_abfa3082c7ea2f4d8cf81e7352dc900fd}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!numberOfConnections@{numberOfConnections}}
+\index{numberOfConnections@{numberOfConnections}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{numberOfConnections}{numberOfConnections}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_abfa3082c7ea2f4d8cf81e7352dc900fd} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+number\+Of\+Connections = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a008567e5e52c340d6728134049716e9a}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!numberOfEvents@{numberOfEvents}}
+\index{numberOfEvents@{numberOfEvents}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{numberOfEvents}{numberOfEvents}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a008567e5e52c340d6728134049716e9a} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+number\+Of\+Events = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a056b7bfcdfec293f659e7878f365178a}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!srcVariable@{srcVariable}}
+\index{srcVariable@{srcVariable}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{srcVariable}{srcVariable}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a056b7bfcdfec293f659e7878f365178a} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+src\+Variable = property\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsim_net_py_1_1simulator__finite_1_1_simulator_a0f35526e13e1678b52e88e3dba1bf2db}\index{simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}!zScore@{zScore}}
+\index{zScore@{zScore}!simNetPy.simulator\_finite.Simulator@{simNetPy.simulator\_finite.Simulator}}
+\doxysubsubsection{\texorpdfstring{zScore}{zScore}}
+{\footnotesize\ttfamily \label{classsim_net_py_1_1simulator__finite_1_1_simulator_a0f35526e13e1678b52e88e3dba1bf2db} 
+sim\+Net\+Py.\+simulator\+\_\+finite.\+Simulator.\+z\+Score = property\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sim\+Net\+Py/\mbox{\hyperlink{simulator__finite_8py}{simulator\+\_\+finite.\+py}}\end{DoxyCompactItemize}
